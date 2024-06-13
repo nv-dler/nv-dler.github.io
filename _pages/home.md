@@ -3,7 +3,7 @@ title: "NVIDIA DLER - Home"
 layout: homelay
 excerpt: "NVIDIA Deep Learning Efficiency Research"
 sitemap: false
-permalink: /home
+permalink: /
 ---
 
 DLER (Deep Learning Efficiency Research) is a research team at NVIDIA led by Pavlo Molchanov.
