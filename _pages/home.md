@@ -6,11 +6,11 @@ sitemap: false
 permalink: /
 ---
 
-DLER (Deep Learning Efficiency Research) is a research team at NVIDIA led by Pavlo Molchanov.
+DLER (Deep Learning Efficiency Research) is a research team at NVR led by Pavlo Molchanov.
 
-We are a dynamic research group, working within the Learning and Perception Research group (LPR) and collaborating closely with other organisations within NVIDIA.
+A young and dynamic research lab, we are a part of the Learning and Perception Research (LPR) at NVR and collaborating closely with both other organisations within NVIDIA and the broader academia.
 
 Our interests include the development of new architectures and method for efficient LLM inference and training, pre-training of small language models, development of efficient vision-to-language models, and general improvements of deep learning models with an eye on their memory footprint, inference latency, and energy consumption.
 
-
+**We are looking for outstanding deep learning researchers to join our group.**
 Check out our openings at the [NVIDIA Careers website](https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite).

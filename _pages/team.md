@@ -12,7 +12,7 @@ Jump to [members](#members), [interns](#interns), [associated professors](#assoc
 
 ## Staff
 {% assign number_printed = 0 %}
-{% for member in site.data.team_members %}
+{% for member in site.data.members %}
 
 {% assign even_odd = number_printed | modulo: 2 %}
 
@@ -162,7 +162,7 @@ Jump to [members](#members), [interns](#interns), [associated professors](#assoc
 </div>
 {% endif %}
 
-## Lab Visitors
+## Visitors
 <div class="row">
 
 <div class="col-sm-4 clearfix">
