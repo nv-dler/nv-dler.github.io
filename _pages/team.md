@@ -10,7 +10,7 @@ permalink: /team/
 
 Jump to [members](#members), [interns](#interns), [associated professors](#associated-professors), [lab visitors](#lab-visitors).
 
-## Staff
+## Members
 {% assign number_printed = 0 %}
 {% for member in site.data.members %}
 
@@ -166,7 +166,6 @@ Jump to [members](#members), [interns](#interns), [associated professors](#assoc
 <div class="row">
 
 <div class="col-sm-4 clearfix">
-<h4>Visitors</h4>
 {% for member in site.data.visitors %}
 {{ member.name }}
 {% endfor %}
