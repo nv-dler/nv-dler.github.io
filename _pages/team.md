@@ -25,9 +25,13 @@ Jump to [members](#members), [interns](#interns).
   <h4> 
   {{ member.name }}
   </h4>
-  <i>{{ member.info }}
+  <i>{{ member.info }}</i>
+  <!-- {% if member.webpage == 1 %}
   <br><a href="{{ member.webpage }}"> webpage </a>
-  </i>
+  {% endif %} -->
+  {% if member.webpage == 1 %}
+  <li><a href="{{ member.webpage }}"> webpage </a></li>
+  {% endif %}
   <ul style="overflow: hidden">
 
   {% if member.number_educ == 1 %}
