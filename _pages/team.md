@@ -8,7 +8,7 @@ permalink: /team/
 
 # Group Members
 
-Jump to [members](#members), [interns](#interns), [associated professors](#associated-professors), [lab visitors](#lab-visitors).
+Jump to [members](#members), [interns](#interns).
 
 ## Members
 {% assign number_printed = 0 %}
@@ -128,7 +128,7 @@ Jump to [members](#members), [interns](#interns), [associated professors](#assoc
 </div>
 {% endif %}
 
-
+<!-- 
 ## Associated Professors
 
 {% assign number_printed = 0 %}
@@ -171,4 +171,4 @@ Jump to [members](#members), [interns](#interns), [associated professors](#assoc
 {% endfor %}
 </div>
 
-</div>
+</div> -->
