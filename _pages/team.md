@@ -8,7 +8,7 @@ permalink: /team/
 
 # Group Members
 
-Jump to [members](#members), [interns](#interns), [associated professors](#associated-professors), [lab visitors](#lab-visitors).
+Jump to [members](#members), [interns](#interns).
 
 ## Members
 {% assign number_printed = 0 %}
@@ -22,9 +22,21 @@ Jump to [members](#members), [interns](#interns), [associated professors](#assoc
 
 <div class="col-sm-6 clearfix">
   <img src="{{ site.url }}{{ site.baseurl }}/images/teampic/{{ member.photo }}" class="img-responsive" width="25%" style="float: left" />
-  <h4>{{ member.name }}</h4>
-  <i>{{ member.info }} <!--<br>email: <{{ member.email }}></i> -->
+  <h4> 
+  {{ member.name }}
+  </h4>
+  <i>{{ member.info }}</i>
+  {% if member.webpage %}
+  <a href="{{ member.webpage }}"> webpage </a>
+  {% endif %}
+  <!-- {% if member.webpage == 1 %}
+  <br><a href="{{ member.webpage }}"> webpage </a>
+  {% endif %} -->
+
+
+
   <ul style="overflow: hidden">
+  
 
   {% if member.number_educ == 1 %}
   <li> {{ member.education1 }} </li>
@@ -128,7 +140,7 @@ Jump to [members](#members), [interns](#interns), [associated professors](#assoc
 </div>
 {% endif %}
 
-
+<!-- 
 ## Associated Professors
 
 {% assign number_printed = 0 %}
@@ -171,4 +183,4 @@ Jump to [members](#members), [interns](#interns), [associated professors](#assoc
 {% endfor %}
 </div>
 
-</div>
+</div> -->
