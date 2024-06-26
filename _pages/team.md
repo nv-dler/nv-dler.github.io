@@ -30,11 +30,12 @@ Jump to [members](#members), [interns](#interns).
   <br><a href="{{ member.webpage }}"> webpage </a>
   {% endif %} -->
 
+  {% if member.webpage %}
+  <br><a href="{{ member.webpage }}"> webpage </a>
+  {% endif %}
+  
   <ul style="overflow: hidden">
   
-  {% if member.webpage == 1 %}
-  <li><a href="{{ member.webpage }}"> webpage </a></li>
-  {% endif %}
 
   {% if member.number_educ == 1 %}
   <li> {{ member.education1 }} </li>
