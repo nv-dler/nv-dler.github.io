@@ -23,9 +23,11 @@ Jump to [members](#members), [interns](#interns).
 <div class="col-sm-6 clearfix">
   <img src="{{ site.url }}{{ site.baseurl }}/images/teampic/{{ member.photo }}" class="img-responsive" width="25%" style="float: left" />
   <h4> 
-  <a href="{{ member.webpage }}"> {{ member.name }} </a>
+  {{ member.name }}
   </h4>
-  <i>{{ member.info }} <!--<br>email: <{{ member.email }}></i> -->
+  <i>{{ member.info }}
+  <br><a href="{{ member.webpage }}"> webpage </a>
+  </i>
   <ul style="overflow: hidden">
 
   {% if member.number_educ == 1 %}
