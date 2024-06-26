@@ -29,10 +29,12 @@ Jump to [members](#members), [interns](#interns).
   <!-- {% if member.webpage == 1 %}
   <br><a href="{{ member.webpage }}"> webpage </a>
   {% endif %} -->
+
+  <ul style="overflow: hidden">
+  
   {% if member.webpage == 1 %}
   <li><a href="{{ member.webpage }}"> webpage </a></li>
   {% endif %}
-  <ul style="overflow: hidden">
 
   {% if member.number_educ == 1 %}
   <li> {{ member.education1 }} </li>
