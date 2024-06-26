@@ -27,7 +27,7 @@ Jump to [members](#members), [interns](#interns).
   </h4>
   <i>{{ member.info }}</i>
   {% if member.webpage %}
-  <br><a href="{{ member.webpage }}"> webpage </a>
+  <a href="{{ member.webpage }}"> webpage </a>
   {% endif %}
   <!-- {% if member.webpage == 1 %}
   <br><a href="{{ member.webpage }}"> webpage </a>
