@@ -3,33 +3,38 @@
   info: Team Lead
   email: pmolchanov@nvidia.com
   webpage: https://www.pmolchanov.com/
+  scholar: https://scholar.google.com/citations?user=J9PoyoIAAAAJ&hl=en&oi=ao 
 
 - name: Hongxu (Danny) Yin
   photo: Danny.jpg
-  info: Vision-language models.
+  info: Vision-language models
   email: danny@nvidia.com
 
 - name: Saurav Muralidharan
   photo: Saurav.jpg
-  info: Language model efficiency.
+  info: Language model efficiency
   email: saurav@nvidia.com
 
 - name: Greg Heinrich
   photo: Greg.jpg
-  info: Autonomous vehicles, fast vision-language models.
-  email: greg@nvidia.com
+  info: Vision Foundation, Vision-Language Models.
+  email: gheinrich@nvidia.com
+  webpage: https://scholar.google.com/citations?hl=fr&user=VrjibvwAAAAJ
 
 - name: Xin Dong
   photo: Xin.jpg
-  info: Small language models.
+  info: On-device language models
   email: xin@nvidia.com
+  webpage: https://simonxin.com/
+
 
 - name: Peter Belcak
   photo: Peter.jpg
   info: Efficient perceptron architectures, structured sparsity.
   email: pbelcak@nvidia.com
 
-- name: Shinzhe Diao
-  photo: Shinzhe.png
+- name: Shizhe Diao
+  photo: shizhe.png
   info: TBD.
-  email: shinzhe@nvidia.com
+  email: sdiao@nvidia.com
+  webpage: https://shizhediao.github.io/

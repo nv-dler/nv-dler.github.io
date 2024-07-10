@@ -5,7 +5,7 @@
   authors: Ruisi Cai, Saurav Muralidharan, Greg Heinrich, Hongxu Yin, Zhangyang Wang, Jan Kautz, Pavlo Molchanov
   link:
     url: https://arxiv.org/abs/2406.10260
-    display: arXiv:2406.10260
+    display: Arxiv
   highlight: 1
 
 - title: "Step Out and Seek Around: On Warm-Start Training with Incremental Data"
@@ -14,14 +14,23 @@
   authors: Maying Shen, Hongxu Yin, Pavlo Molchanov, Lei Mao, Jose M. Alvarez
   link:
     url: https://arxiv.org/abs/2406.04484
-    display: arXiv:2406.04484
-  highlight: 1
+    display: Arxiv
+  highlight: 0
 
 - title: "X-VILA: Cross-Modality Alignment for Large Language Model"
-  image: X-VILA.png
+  image: xvila.png
   description: We introduce X-VILA, an omni-modality model designed to extend the capabilities of large language models (LLMs) by incorporating image, video, and audio modalities. By aligning modality-specific encoders with LLM inputs and diffusion decoders with LLM outputs, X-VILA achieves cross-modality understanding, reasoning, and generation. To facilitate this cross-modality alignment, we curate an effective interleaved any-to-any modality instruction-following dataset.
   authors: Hanrong Ye, De-An Huang, Yao Lu, Zhiding Yu, Wei Ping, Andrew Tao, Jan Kautz, Song Han, Dan Xu, Pavlo Molchanov, Hongxu Yin
   link:
     url: https://arxiv.org/abs/2405.19335
-    display: arXiv:2405.19335
+    display: Arxiv
   highlight: 1
+
+- title: "AM-RADIO: Agglomerative Vision Foundation Model Reduce All Domains Into One"
+  image: radio_pub.png
+  description: We introduce AM-RADIO, a multi-teacher distillation framework for Vision Foundation Models. We propose an efficient model architecture named E-RADIO, which runs 6x faster than teachers at matched resolution. 
+  authors: Mike Ranzinger*, Greg Heinrich*, Jan Kautz, Pavlo Molchanov.
+  link:
+    url: https://arxiv.org/abs/2312.06709
+    display: Arxiv
+  highlight: 1 
