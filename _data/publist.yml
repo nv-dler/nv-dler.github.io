@@ -1,0 +1,36 @@
+
+- title: "Flextron: Many-in-One Flexible Large Language Model"
+  image: Flextron.png
+  description: Training modern LLMs is extremely resource intensive, and customizing them for various deployment scenarios characterized by limited compute and memory resources through repeated training is impractical. We introduce Flextron, a network architecture and post-training model optimization framework supporting flexible model deployment.
+  authors: Ruisi Cai, Saurav Muralidharan, Greg Heinrich, Hongxu Yin, Zhangyang Wang, Jan Kautz, Pavlo Molchanov
+  link:
+    url: https://arxiv.org/abs/2406.10260
+    display: Arxiv
+  highlight: 1
+
+- title: "Step Out and Seek Around: On Warm-Start Training with Incremental Data"
+  image: StepOut.png
+  description: We propose Knowledge Consolidation and Acquisition (CKCA), a continuous model improvement algorithm with two novel components. First, a novel feature regularization (FeatReg) to retain and refine knowledge from existing checkpoints; Second, we propose adaptive knowledge distillation (AdaKD), a novel approach to forget mitigation and knowledge transfer.
+  authors: Maying Shen, Hongxu Yin, Pavlo Molchanov, Lei Mao, Jose M. Alvarez
+  link:
+    url: https://arxiv.org/abs/2406.04484
+    display: Arxiv
+  highlight: 0
+
+- title: "X-VILA: Cross-Modality Alignment for Large Language Model"
+  image: xvila.png
+  description: We introduce X-VILA, an omni-modality model designed to extend the capabilities of large language models (LLMs) by incorporating image, video, and audio modalities. By aligning modality-specific encoders with LLM inputs and diffusion decoders with LLM outputs, X-VILA achieves cross-modality understanding, reasoning, and generation. To facilitate this cross-modality alignment, we curate an effective interleaved any-to-any modality instruction-following dataset.
+  authors: Hanrong Ye, De-An Huang, Yao Lu, Zhiding Yu, Wei Ping, Andrew Tao, Jan Kautz, Song Han, Dan Xu, Pavlo Molchanov, Hongxu Yin
+  link:
+    url: https://arxiv.org/abs/2405.19335
+    display: Arxiv
+  highlight: 1
+
+- title: "AM-RADIO: Agglomerative Vision Foundation Model Reduce All Domains Into One"
+  image: radio_pub.png
+  description: We introduce AM-RADIO, a multi-teacher distillation framework for Vision Foundation Models. We propose an efficient model architecture named E-RADIO, which runs 6x faster than teachers at matched resolution. 
+  authors: Mike Ranzinger*, Greg Heinrich*, Jan Kautz, Pavlo Molchanov.
+  link:
+    url: https://arxiv.org/abs/2312.06709
+    display: Arxiv
+  highlight: 1 
