@@ -1,3 +1,58 @@
+- title: "Compact Language Models via Pruning and Knowledge Distillation"
+  image: minitron.png
+  description: We develop an efficient model compression strategy for LLMs that combines depth, width, attention and MLP pruning with knowledge-distillation-based retraining. We use our strategy to compress the Nemotron-4 family of LLMs by a factor of 2-4x, and compare their performance to similarly-sized models on a variety of language modeling tasks. Deriving 8B and 4B models from an already pretrained 15B model using our approach requires up to 40x fewer training tokens per model compared to training from scratch; this results in compute cost savings of 1.8x for training the full model family (15B, 8B, and 4B).
+  authors: Saurav Muralidharan, Sharath Turuvekere Sreenivas, Raviraj Joshi, Marcin Chochowski, Mostofa Patwary, Mohammad Shoeybi, Bryan Catanzaro, Jan Kautz, Pavlo Molchanov
+  linklist:
+    - url: https://arxiv.org/abs/2407.14679
+      display: Arxiv
+    - url: https://huggingface.co/collections/nvidia/minitron-669ac727dc9c86e6ab7f0f3e
+      display: HF models  
+    - url: https://developer.nvidia.com/blog/how-to-prune-and-distill-llama-3-1-8b-to-an-nvidia-llama-3-1-minitron-4b-model/
+      display: Blog
+  highlight: 1
+
+- title: "DoRA: Weight-Decomposed Low-Rank Adaptation"
+  image: dora.png
+  description: DoRA is a parameter efficient finetuning technique. DoRA consistently outperforms LoRA on fine-tuning LLaMA, LLaVA, and VL-BART on various downstream tasks, such as commonsense reasoning, visual instruction tuning, and image/video-text understanding.
+  authors: Shih-Yang Liu, Chien-Yi Wang, Hongxu Yin, Pavlo Molchanov, Yu-Chiang Frank Wang, Kwang-Ting Cheng, Min-Hung Chen
+  venue: ICML 2024 (oral)
+  linklist:
+    - url: https://arxiv.org/abs/2312.07533
+      display: Arxiv
+    - url: https://github.com/NVlabs/DoRA
+      display: Code
+  highlight: 1
+
+- title: "AM-RADIO: Agglomerative Vision Foundation Model Reduce All Domains Into One"
+  image: radio_pub.png
+  description: We introduce AM-RADIO, a multi-teacher distillation framework for Vision Foundation Models. We propose an efficient model architecture named E-RADIO, which runs 6x faster than teachers at matched resolution. Our comprehensive benchmarking process covers downstream tasks including ImageNet classification, ADE20k semantic segmentation, COCO object detection and LLaVa-1.5 framework.
+  authors: Mike Ranzinger*, Greg Heinrich*, Jan Kautz, Pavlo Molchanov.
+  venue: CVPR 2024
+  linklist:
+    - url: https://arxiv.org/abs/2312.06709
+      display: Arxiv
+    - url: https://github.com/NVlabs/RADIO
+      display: GitHub
+    - url: https://huggingface.co/collections/nvidia/radio-669f77f1dd6b153f007dd1c6
+      display: HF models
+  highlight: 1 
+
+- title: "VILA: Cross-Modality Alignment for Large Language Model"
+  image: vila.png
+  description: With an enhanced pre-training recipe we build VILA, a Visual Language model family that consistently outperforms the state-of-the-art models, e.g., LLaVA-1.5, across main benchmarks without bells and whistles.
+  authors: Ji Lin*, Hongxu Yin*, Wei Ping, Yao Lu, Pavlo Molchanov, Andrew Tao, Huizi Mao, Jan Kautz, Mohammad Shoeybi, Song Han
+  venue: CVPR 2024
+  linklist:
+    - url: https://arxiv.org/abs/2312.07533
+      display: Arxiv
+    - url: https://github.com/NVlabs/VILA
+      display: Code
+    - url: https://developer.nvidia.com/blog/visual-language-models-on-nvidia-hardware-with-vila/
+      display: Blog
+    - url: https://developer.nvidia.com/blog/visual-language-intelligence-and-edge-ai-2-0/
+      display: Tutorial
+  highlight: 1
+
 - title: "A Deeper Look at Depth Pruning of LLMs"
   image: depthpruning.png
   description: We explore different block importance metrics by considering adaptive metrics such as Shapley value in addition to static ones explored in prior work. We show that adaptive metrics exhibit a trade-off in performance between tasks i.e., improvement on one task may degrade performance on the other due to differences in the computed block influences. Furthermore, we extend this analysis from a complete block to individual self-attention and feed-forward layers, highlighting the propensity of the self-attention layers to be more amendable to pruning, even allowing removal of upto 33% of the self-attention layers without incurring any performance degradation on MMLU for Mistral 7b (significant reduction in costly maintenance of KV-cache). Finally, we look at simple performance recovery techniques to emulate the pruned layers by training lightweight additive bias or low-rank linear adapters. Performance recovery using emulated updates avoids performance degradation for the initial blocks (up to 5% absolute improvement on MMLU), which is either competitive or superior to the learning-based technique.
@@ -7,22 +62,17 @@
       display: Arxiv
   highlight: 0
 
-- title: "Compact Language Models via Pruning and Knowledge Distillation"
-  image: minitron.png
-  description: We develop an efficient model compression strategy for LLMs that combines depth, width, attention and MLP pruning with knowledge-distillation-based retraining. We use our strategy to compress the Nemotron-4 family of LLMs by a factor of 2-4x, and compare their performance to similarly-sized models on a variety of language modeling tasks. Deriving 8B and 4B models from an already pretrained 15B model using our approach requires up to 40x fewer training tokens per model compared to training from scratch; this results in compute cost savings of 1.8x for training the full model family (15B, 8B, and 4B).
-  authors: Saurav Muralidharan, Sharath Turuvekere Sreenivas, Raviraj Joshi, Marcin Chochowski, Mostofa Patwary, Mohammad Shoeybi, Bryan Catanzaro, Jan Kautz, Pavlo Molchanov
-  linklist:
-    - url: https://arxiv.org/abs/2407.14679
-      display: Arxiv
-  highlight: 1
 
 - title: "Flextron: Many-in-One Flexible Large Language Model"
-  image: Flextron.png
+  image: flextron.png
   description: Training modern LLMs is extremely resource intensive, and customizing them for various deployment scenarios characterized by limited compute and memory resources through repeated training is impractical. We introduce Flextron, a network architecture and post-training model optimization framework supporting flexible model deployment.
   authors: Ruisi Cai, Saurav Muralidharan, Greg Heinrich, Hongxu Yin, Zhangyang Wang, Jan Kautz, Pavlo Molchanov
+  venue: ICML 2024 (oral)
   linklist:
     - url: https://arxiv.org/abs/2406.10260
       display: Arxiv
+    - url: https://cairuisi.github.io/Flextron/
+      display: Webpage
   highlight: 1
 
 - title: "Step Out and Seek Around: On Warm-Start Training with Incremental Data"
@@ -43,14 +93,13 @@
       display: Arxiv
   highlight: 1
 
-- title: "AM-RADIO: Agglomerative Vision Foundation Model Reduce All Domains Into One"
-  image: radio_pub.png
-  description: We introduce AM-RADIO, a multi-teacher distillation framework for Vision Foundation Models. We propose an efficient model architecture named E-RADIO, which runs 6x faster than teachers at matched resolution. Our comprehensive benchmarking process covers downstream tasks including ImageNet classification, ADE20k semantic segmentation, COCO object detection and LLaVa-1.5 framework.
-  authors: Mike Ranzinger*, Greg Heinrich*, Jan Kautz, Pavlo Molchanov.
-  venue: CVPR 2023
+- title: "VILA2: VILA Augmented VILA"
+  image: vila2.png
+  description: VLM improve itself. We observe three rounds of free-lunch for VLM boosting, followed by a novel specialist augmentation mechanism.
+  authors: Yunhao Fang*, Ligeng Zhu*, Yao Lu, Yan Wang, Pavlo Molchanov, Jang Hyun Cho, Marco Pavone, Song Han, Hongxu Yin
   linklist:
-    - url: https://arxiv.org/abs/2312.06709
+    - url: https://arxiv.org/abs/2407.17453
       display: Arxiv
-    - url: https://github.com/NVlabs/RADIO
-      display: GitHub
-  highlight: 1 
+  highlight: 1
+
+
