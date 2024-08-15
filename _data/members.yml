@@ -1,40 +1,46 @@
 - name: Pavlo Molchanov
-  photo: pavlo.png
+  photo: Pavlo.png
   info: Team Lead
   email: pmolchanov@nvidia.com
   webpage: https://www.pmolchanov.com/
   scholar: https://scholar.google.com/citations?user=J9PoyoIAAAAJ&hl=en&oi=ao 
 
 - name: Hongxu (Danny) Yin
-  photo: Danny.jpg
+  photo: Danny.png
   info: Vision-language models
-  email: danny@nvidia.com
+  email: dannyy@nvidia.com
+  webpage: https://hongxu-yin.github.io/
+  scholar: https://scholar.google.com/citations?user=4gdSoOYAAAAJ&hl=en&oi=ao
 
 - name: Saurav Muralidharan
   photo: Saurav.jpg
   info: Language model efficiency
-  email: saurav@nvidia.com
+  email: sauravm@nvidia.com
+  webpage: https://sauravm.com/
+  scholar: https://scholar.google.com/citations?user=GXlChWcAAAAJ&hl=en
 
 - name: Greg Heinrich
   photo: Greg.jpg
   info: Vision Foundation, Vision-Language Models.
   email: gheinrich@nvidia.com
-  webpage: https://scholar.google.com/citations?hl=fr&user=VrjibvwAAAAJ
+  scholar: https://scholar.google.com/citations?hl=fr&user=VrjibvwAAAAJ
 
 - name: Xin Dong
   photo: Xin.jpg
   info: On-device language models
-  email: xin@nvidia.com
+  email: xind@nvidia.com
   webpage: https://simonxin.com/
+  scholar: https://scholar.google.com/citations?user=O8nBN64AAAAJ&hl=en
 
 
 - name: Peter Belcak
-  photo: Peter.jpg
+  photo: Peter.png
   info: Efficient perceptron architectures, structured sparsity.
   email: pbelcak@nvidia.com
 
 - name: Shizhe Diao
-  photo: shizhe.png
+  photo: Shizhe.png
   info: TBD.
   email: sdiao@nvidia.com
   webpage: https://shizhediao.github.io/
+  scholar: https://scholar.google.com/citations?user=NDFQrLQAAAAJ&hl=en

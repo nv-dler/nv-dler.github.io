@@ -1,36 +1,56 @@
+- title: "A Deeper Look at Depth Pruning of LLMs"
+  image: depthpruning.png
+  description: We explore different block importance metrics by considering adaptive metrics such as Shapley value in addition to static ones explored in prior work. We show that adaptive metrics exhibit a trade-off in performance between tasks i.e., improvement on one task may degrade performance on the other due to differences in the computed block influences. Furthermore, we extend this analysis from a complete block to individual self-attention and feed-forward layers, highlighting the propensity of the self-attention layers to be more amendable to pruning, even allowing removal of upto 33% of the self-attention layers without incurring any performance degradation on MMLU for Mistral 7b (significant reduction in costly maintenance of KV-cache). Finally, we look at simple performance recovery techniques to emulate the pruned layers by training lightweight additive bias or low-rank linear adapters. Performance recovery using emulated updates avoids performance degradation for the initial blocks (up to 5% absolute improvement on MMLU), which is either competitive or superior to the learning-based technique.
+  authors: Shoaib Ahmed Siddiqui, Xin Dong, Greg Heinrich, Thomas Breuel, Jan Kautz, David Krueger, Pavlo Molchanov
+  linklist:
+    - url: https://www.arxiv.org/abs/2407.16286
+      display: Arxiv
+  highlight: 0
+
+- title: "Compact Language Models via Pruning and Knowledge Distillation"
+  image: minitron.png
+  description: We develop an efficient model compression strategy for LLMs that combines depth, width, attention and MLP pruning with knowledge-distillation-based retraining. We use our strategy to compress the Nemotron-4 family of LLMs by a factor of 2-4x, and compare their performance to similarly-sized models on a variety of language modeling tasks. Deriving 8B and 4B models from an already pretrained 15B model using our approach requires up to 40x fewer training tokens per model compared to training from scratch; this results in compute cost savings of 1.8x for training the full model family (15B, 8B, and 4B).
+  authors: Saurav Muralidharan, Sharath Turuvekere Sreenivas, Raviraj Joshi, Marcin Chochowski, Mostofa Patwary, Mohammad Shoeybi, Bryan Catanzaro, Jan Kautz, Pavlo Molchanov
+  linklist:
+    - url: https://arxiv.org/abs/2407.14679
+      display: Arxiv
+  highlight: 1
 
 - title: "Flextron: Many-in-One Flexible Large Language Model"
   image: Flextron.png
   description: Training modern LLMs is extremely resource intensive, and customizing them for various deployment scenarios characterized by limited compute and memory resources through repeated training is impractical. We introduce Flextron, a network architecture and post-training model optimization framework supporting flexible model deployment.
   authors: Ruisi Cai, Saurav Muralidharan, Greg Heinrich, Hongxu Yin, Zhangyang Wang, Jan Kautz, Pavlo Molchanov
-  link:
-    url: https://arxiv.org/abs/2406.10260
-    display: Arxiv
+  linklist:
+    - url: https://arxiv.org/abs/2406.10260
+      display: Arxiv
   highlight: 1
 
 - title: "Step Out and Seek Around: On Warm-Start Training with Incremental Data"
   image: StepOut.png
   description: We propose Knowledge Consolidation and Acquisition (CKCA), a continuous model improvement algorithm with two novel components. First, a novel feature regularization (FeatReg) to retain and refine knowledge from existing checkpoints; Second, we propose adaptive knowledge distillation (AdaKD), a novel approach to forget mitigation and knowledge transfer.
   authors: Maying Shen, Hongxu Yin, Pavlo Molchanov, Lei Mao, Jose M. Alvarez
-  link:
-    url: https://arxiv.org/abs/2406.04484
-    display: Arxiv
+  linklist:
+    - url: https://arxiv.org/abs/2406.04484
+      display: Arxiv
   highlight: 0
 
 - title: "X-VILA: Cross-Modality Alignment for Large Language Model"
   image: xvila.png
   description: We introduce X-VILA, an omni-modality model designed to extend the capabilities of large language models (LLMs) by incorporating image, video, and audio modalities. By aligning modality-specific encoders with LLM inputs and diffusion decoders with LLM outputs, X-VILA achieves cross-modality understanding, reasoning, and generation. To facilitate this cross-modality alignment, we curate an effective interleaved any-to-any modality instruction-following dataset.
   authors: Hanrong Ye, De-An Huang, Yao Lu, Zhiding Yu, Wei Ping, Andrew Tao, Jan Kautz, Song Han, Dan Xu, Pavlo Molchanov, Hongxu Yin
-  link:
-    url: https://arxiv.org/abs/2405.19335
-    display: Arxiv
+  linklist:
+    - url: https://arxiv.org/abs/2405.19335
+      display: Arxiv
   highlight: 1
 
 - title: "AM-RADIO: Agglomerative Vision Foundation Model Reduce All Domains Into One"
   image: radio_pub.png
-  description: We introduce AM-RADIO, a multi-teacher distillation framework for Vision Foundation Models. We propose an efficient model architecture named E-RADIO, which runs 6x faster than teachers at matched resolution. 
+  description: We introduce AM-RADIO, a multi-teacher distillation framework for Vision Foundation Models. We propose an efficient model architecture named E-RADIO, which runs 6x faster than teachers at matched resolution. Our comprehensive benchmarking process covers downstream tasks including ImageNet classification, ADE20k semantic segmentation, COCO object detection and LLaVa-1.5 framework.
   authors: Mike Ranzinger*, Greg Heinrich*, Jan Kautz, Pavlo Molchanov.
-  link:
-    url: https://arxiv.org/abs/2312.06709
-    display: Arxiv
+  venue: CVPR 2023
+  linklist:
+    - url: https://arxiv.org/abs/2312.06709
+      display: Arxiv
+    - url: https://github.com/NVlabs/RADIO
+      display: GitHub
   highlight: 1 
