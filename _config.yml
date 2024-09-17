@@ -10,8 +10,8 @@ title: DLER @ NVR
 email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
   Website of the DLER group at NVIDIA Research.
-baseurl: ""
-url: ""
+baseurl: "/horseshoeketchup.github.io"
+url: "https://nv-dler.github.io"
 
 include:
   - .htaccess

@@ -5,6 +5,13 @@
   webpage: https://www.pmolchanov.com/
   scholar: https://scholar.google.com/citations?user=J9PoyoIAAAAJ&hl=en&oi=ao 
 
+- name: Yingyan (Celine) Lin
+  photo: Celine.png
+  info: Visiting Professor
+  email: sdiao@nvidia.com
+  webpage: https://eiclab.scs.gatech.edu/pages/team.html
+  scholar: https://scholar.google.com/citations?user=dio8IesAAAAJ&hl=en&oi=ao
+
 - name: Hongxu (Danny) Yin
   photo: Danny.png
   info: Vision-language models
@@ -19,7 +26,7 @@
   webpage: https://sauravm.com/
   scholar: https://scholar.google.com/citations?user=GXlChWcAAAAJ&hl=en
 
-- name: Greg Heinrich
+- name: Greg Heinrich 
   photo: Greg.jpg
   info: Vision Foundation, Vision-Language Models.
   email: gheinrich@nvidia.com
@@ -31,7 +38,6 @@
   email: xind@nvidia.com
   webpage: https://simonxin.com/
   scholar: https://scholar.google.com/citations?user=O8nBN64AAAAJ&hl=en
-
 
 - name: Peter Belcak
   photo: Peter.png

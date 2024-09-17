@@ -93,7 +93,7 @@
       display: Arxiv
   highlight: 1
 
-- title: "VILA2: VILA Augmented VILA"
+- title: "VILA<sup>2</sup>: VILA Augmented VILA"
   image: vila2.png
   description: VLM improve itself. We observe three rounds of free-lunch for VLM boosting, followed by a novel specialist augmentation mechanism.
   authors: Yunhao Fang*, Ligeng Zhu*, Yao Lu, Yan Wang, Pavlo Molchanov, Jang Hyun Cho, Marco Pavone, Song Han, Hongxu Yin
@@ -102,4 +102,22 @@
       display: Arxiv
   highlight: 1
 
+- title: "SpatialRGPT: Grounded Spatial Reasoning in Vision Language Model"
+  image: srgpt.png
+  description: Enabling visual grounding in visual language models.
+  authors: An-Chieh Cheng, Hongxu Yin, Yang Fu, Qiushan Guo, Ruihan Yang, Jan Kautz, Xiaolong Wang, Sifei Liu
+  linklist:
+    - url: https://arxiv.org/abs/2406.01584
+      display: Arxiv
+  highlight: 1
+
+- title: "RegionGPT: Towards Region Understanding Vision Language Model"
+  image: srgpt.png
+  description: Enabling bounding box and segmentation mask interactions in visual language models.
+  authors: Qiushan Guo, Shalini De Mello, Hongxu Yin, Wonmin Byeon, Ka Chun Cheung, Yizhou Yu, Ping Luo, Sifei Liu
+  venue: CVPR 2024 (oral)
+  linklist:
+    - url: https://arxiv.org/abs/2403.02330
+      display: Arxiv
+  highlight: 0
 
