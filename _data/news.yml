@@ -1,3 +1,18 @@
+- date: May 2025
+  headline: Members of our team are attending ICLR'25. We are presenting 5 papers, 1 workshop, and joining a few panel discussions.
+
+- date: April 2025
+  headline: 5 of our papers we accepted to CVPR'25.
+
+- date: January 2025
+  headline: Our team's contributions to Llama Nemotron, RADIO, and VILA models were featured in the GTC keynote.
+
+- date: December 2024
+  headline: Members of our team are attending NeurIPS'24. We are presenting 3 papers and 1 workshop.
+
+- date: August 2024
+  headline: Members of our team are attending ACL'24 and presenting <a href="https://aclanthology.org/2024.acl-short.10.pdf">99% Conditionally Sparse Language Modelling</a>.
+
 - date: June 2024
   headline: Congratulations to <a href="https://shizhediao.github.io">Shizhe Diao</a> for winning the <a href="https://github.com/OptimalScale/LMFlow">Best Demo Paper Award</a> and <a href="https://arxiv.org/abs/2311.09677">Outstanding Paper award</a> at NAACL 2024.
 
@@ -5,19 +20,13 @@
   headline: <a href="https://shizhediao.github.io">Shizhe Diao</a> joins the group. Welcome!
 
 - date: June 2024
-  headline: Members of our group are attending CVPR'24 and presenting <a href="https://github.com/NVlabs/RADIO">RADIO</a> and <a href="https://github.com/NVlabs/VILA">VILA</a>.
+  headline: Members of our team are attending CVPR'24 and presenting <a href="https://github.com/NVlabs/RADIO">RADIO</a> and <a href="https://github.com/NVlabs/VILA">VILA</a>.
 
 - date: May 2024
-  headline: <a href="https://arxiv.org/pdf/2406.10260">Flextron</a> and <a href="https://github.com/NVlabs/DoRA">DoRA</a> are accepted to ICML'24 as Oral.
+  headline: <a href="https://arxiv.org/pdf/2406.10260">Flextron</a> and <a href="https://github.com/NVlabs/DoRA">DoRA</a> are accepted to ICML'24 for oral presentations.
 
 - date: May 2024
-  headline: Members of the group are attending ICLR'24 and presenting <a href="https://github.com/NVlabs/FasterViT">FasterViT</a> and <a href="https://arxiv.org/pdf/2306.14306">AdaSAP</a>.
-
-- date: April 2024
-  headline: Peter Belcak joins the group. Welcome!
-
-- date: March 2024
-  headline: <a href="https://simonxin.com">Xin Dong</a> joins the group. Welcome!
+  headline: Members of our team are attending ICLR'24 and presenting <a href="https://github.com/NVlabs/FasterViT">FasterViT</a> and <a href="https://arxiv.org/pdf/2306.14306">AdaSAP</a>.
 
 - date: February 2024
   headline: Our paper, FasterViT, was accepted to ICLR'24.

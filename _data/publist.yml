@@ -1,3 +1,105 @@
+- title: "CLIMB: CLustering-based Iterative Data Mixture Bootstrapping"
+  description: "We introduce CLustering-based Iterative Data Mixture Bootstrapping (CLIMB), an automated framework that discovers, evaluates, and refines data mixtures in a pre-training setting. Specifically, CLIMB embeds and clusters large-scale datasets in a semantic space and then iteratively searches for optimal mixtures using a smaller proxy model and a predictor. When continuously trained on 400B tokens with this mixture, our 950M model exceeds the state-of-the-art Llama-3.2-1B by 2.0% averaged across 12 general reasoning tasks. Moreover, we observe that optimizing for a specific domain (e.g., Social Sciences) yields a 5% improvement over random sampling. We introduce ClimbLab, a filtered 1.3-trillion-token corpus with 20 clusters as a research playground, and ClimbMix, a compact yet powerful 400-billion-token dataset designed for efficient pre-training that delivers superior performance under an equal token budget."
+  authors: Shizhe Diao, Yu Yang, Yonggan Fu, Xin Dong, Dan Su, Markus Kliegl, Zijia Chen, Peter Belcak, Yoshi Suhara, Hongxu Yin, Mostofa Patwary, Yingyan (Celine) Lin, Jan Kautz, Pavlo Molchanov
+  venue: ICML 2025
+  image: CLIMB.png
+  linklist:
+    - url: https://arxiv.org/abs/2504.13161
+      display: Arxiv
+    - url: https://huggingface.co/collections/nvidia/climb-datasets-67e428bdb9aaced2acda191f
+      display: HF datasets
+    - url: https://research.nvidia.com/labs/lpr/climb/
+      display: Homepage
+  highlight: 1
+
+- title: "PHI-S: Distribution Balancing for Label-Free Multi-Teacher Distillation"
+  description: Various visual foundation models have distinct strengths and weaknesses, both of which can be improved through heterogeneous multi-teacher knowledge distillation without labels, termed "agglomerative models." We build upon this body of work by studying the effect of the teachers' activation statistics, particularly the impact of the loss function on the resulting student model quality. We explore a standard toolkit of statistical normalization techniques to better align the different distributions and assess their effects. Further, we examine the impact on downstream teacher-matching metrics, which motivates the use of Hadamard matrices. With these matrices, we demonstrate useful properties, showing how they can be used for isotropic standardization, where each dimension of a multivariate distribution is standardized using the same scale. We call this technique "PHI Standardization" (PHI-S) and empirically demonstrate that it produces the best student model across the suite of methods studied.
+  authors: Mike Ranzinger, Jon Barker, Greg Heinrich, Pavlo Molchanov, Bryan Catanzaro, Andrew Tao
+  venue: ICML 2025
+  linklist:
+    - url: https://arxiv.org/abs/2410.01680
+      display: Arxiv
+
+- title: "RADIOv2.5: Improved Baselines for Agglomerative Vision Foundation Models"
+  description: "Agglomerative models have recently emerged as a powerful approach to training vision foundation models, leveraging multi-teacher distillation from existing models such as CLIP, DINO, and SAM. This strategy enables the efficient creation of robust models, combining the strengths of individual teachers while significantly reducing computational and resource demands. In this paper, we thoroughly analyze state-of-the-art agglomerative models, identifying critical challenges including resolution mode shifts, teacher imbalance, idiosyncratic teacher artifacts, and an excessive number of output tokens. To address these issues, we propose several novel solutions: multi-resolution training, mosaic augmentation, and improved balancing of teacher loss functions. Specifically, in the context of Vision Language Models, we introduce a token compression technique to maintain high-resolution information within a fixed token count."
+  authors: Greg Heinrich, Mike Ranzinger, Hongxu (Danny)Yin, Yao Lu, Jan Kautz, Andrew Tao, Bryan Catanzaro, Pavlo Molchanov
+  venue: CVPR 2025
+  linklist:
+    - url: https://arxiv.org/abs/2412.07679
+      display: Arxiv
+
+- title: "FeatSharp: Your Vision Model Features, Sharper"
+  description: The feature maps of vision encoders are fundamental to myriad modern AI tasks, ranging from core perception algorithms (e.g. semantic segmentation, object detection, depth perception, etc.) to modern multimodal understanding in vision-language models (VLMs). Currently, in computer vision, the frontier of general purpose vision backbones are Vision Transformers (ViT), typically trained using contrastive loss (e.g. CLIP). A key problem with most off-the-shelf ViTs, particularly CLIP, is that these models are inflexibly low resolution. Most run at 224x224px, while the "high resolution" versions are around 378-448px, but still inflexible. We introduce a novel method to coherently and cheaply upsample the feature maps of low-res vision encoders while picking up on fine-grained details that would otherwise be lost due to resolution. We demonstrate the effectiveness of this approach on core perception tasks as well as within agglomerative model (RADIO) training as a way of providing richer targets for distillation.
+  authors: Mike Ranzinger, Greg Heinrich, Pavlo Molchanov, Jan Kautz, Bryan Catanzaro, Andrew Tao
+  linklist:
+    - url: https://arxiv.org/abs/2502.16025
+      display: Arxiv
+
+- title: "Nemotron-H: A Family of Accurate and Efficient Hybrid Mamba-Transformer Models"
+  description: "As inference-time scaling becomes critical for enhanced reasoning capabilities, it is increasingly becoming important to build models that are efficient to infer. We introduce Nemotron-H, a family of 8B and 56B/47B hybrid Mamba-Transformer models designed to reduce inference cost for a given accuracy level. To achieve this goal, we replace the majority of self-attention layers in the common Transformer model architecture with Mamba layers that perform constant computation and require constant memory per generated token. We show that Nemotron-H models offer either better or on-par accuracy compared to other similarly-sized state-of-the-art open-sourced Transformer models (e.g., Qwen-2.5-7B/72B and Llama-3.1-8B/70B), while being up to 3× faster at inference. To further increase inference speed and reduce the memory required at inference time, we created Nemotron-H-47B-Base from the 56B model using a new compression via pruning and distillation technique called MiniPuzzle. Nemotron-H-47B-Base achieves similar accuracy to the 56B model, but is 20% faster to infer. In addition, we introduce an FP8-based training recipe and show that it can achieve on par results with BF16-based training. This recipe is used to train the 56B model. We are releasing Nemotron-H base model checkpoints with support in Hugging Face and NeMo."
+  authors: Aaron Blakeman, Aarti Basant, Abhinav Khattar, Adithya Renduchintala, Akhiad Bercovich, Aleksander Ficek, Alexis Bjorlin, Ali Taghibakhshi, Amala Sanjay Deshmukh, Ameya Sunil Mahabaleshwarkar, Andrew Tao, Anna Shors, Ashwath Aithal, Ashwin Poojary, Ayush Dattagupta, Balaram Buddharaju, Bobby Chen, Boris Ginsburg, Boxin Wang, Brandon Norick, Brian Butterfield, Bryan Catanzaro, Carlo del Mundo, Chengyu Dong, Christine Harvey, Christopher Parisien, Dan Su, Daniel Korzekwa, Danny Yin, Daria Gitman, David Mosallanezhad, Deepak Narayanan, Denys Fridman, Dima Rekesh, Ding Ma, Dmytro Pykhtar, Dong Ahn, Duncan Riach, Dusan Stosic, Eileen Long, Elad Segal, Ellie Evans, Eric Chung, Erick Galinkin, Evelina Bakhturina, Ewa Dobrowolska, Fei Jia, Fuxiao Liu, Gargi Prasad, Gerald Shen, Guilin Liu, Guo Chen, Haifeng Qian, Helen Ngo, Hongbin Liu, Hui Li, Igor Gitman, Ilia Karmanov, Ivan Moshkov, Izik Golan, Jan Kautz, Jane Polak Scowcroft, Jared Casper, Jarno Seppanen, Jason Lu, Jason Sewall, Jiaqi Zeng, Jiaxuan You, Jimmy Zhang, Jing Zhang, Jining Huang, Jinze Xue, Jocelyn Huang, Joey Conway, John Kamalu, Jon Barker, Jonathan Cohen, Joseph Jennings, Jupinder Parmar, Karan Sapra, Kari Briski, Kateryna Chumachenko, Katherine Luna, Keshav Santhanam, Kezhi Kong, Kirthi Sivamani, Krzysztof Pawelec, Kumar Anik, Kunlun Li, Lawrence McAfee, Leon Derczynski, Lindsey Pavao, Luis Vega, Lukas Voegtle, Maciej Bala, Maer Rodrigues de Melo, Makesh Narsimhan Sreedhar, Marcin Chochowski, Markus Kliegl et al.
+  linklist:
+    - url: https://arxiv.org/abs/2504.03624
+      display: Arxiv
+
+- title: "EoRA: Training-free Compensation for Compressed LLM with Eigenspace Low-Rank Approximation"
+  description: "In this work, we re-formulate the model compression problem into the customized compensation problem: Given a compressed model, we aim to introduce residual low-rank paths to compensate for compression errors under customized requirements from users (e.g., tasks, compression ratios), resulting in greater flexibility in balancing accuracy and overhead(inference and model size) without being bound to fixed compression formats. However, naively applying SVD to derive residual paths causes suboptimal utilization of the low-rank representation capacity. Instead, we propose Training-free Eigenspace Low-Rank Approximation (EoRA), a method that directly minimizes compression-induced errors without requiring gradient-based training, achieving fast optimization in minutes using a small amount of calibration data. EoRA projects compression errors into the eigenspace of input activations, leveraging eigenvalues to effectively prioritize the reconstruction of high-importance error components. Moreover, EoRA can be seamlessly integrated with fine-tuning and quantization to further improve effectiveness and efficiency. EoRA consistently outperforms previous methods in compensating errors for compressed LLaMA2/3 models on various tasks, such as language generation, commonsense reasoning, and math reasoning tasks (e.g., 31.31%/12.88% and 9.69% improvements on ARC-Easy/ARC-Challenge and MathQA when compensating LLaMA3-8B that is quantized to 4-bit and pruned to 2:4 sparsity). EoRA offers a scalable, training-free solution to compensate for compression errors, making it a powerful tool to deploy LLMs more flexibly."
+  authors: Shih-Yang Liu, Maksim Khadkevich, Nai Chit Fung, Charbel Sakr, Chao-Han Huck Yang, Chien-Yi Wang, Saurav Muralidharan, Hongxu Yin, Kwang-Ting Cheng, Jan Kautz, Yu-Chiang Frank Wang, Pavlo Molchanov, Min-Hung Chen
+  linklist:
+    - url: https://arxiv.org/abs/2410.21271
+      display: Arxiv
+
+- title: "MaskLLM: Learnable Semi-Structured Sparsity for Large Language Models"
+  description: "Large Language Models (LLMs) are distinguished by their massive parameter counts, which typically result in significant redundancy. This work introduces MaskLLM, a learnable pruning method that establishes Semi-structured (or ``N:M'') Sparsity in LLMs, aimed at reducing computational overhead during inference. Instead of developing a new importance criterion, MaskLLM explicitly models N:M patterns as a learnable distribution through Gumbel Softmax sampling. This approach facilitates end-to-end training on large-scale datasets and offers two notable advantages: 1) High-quality Masks - our method effectively scales to large datasets and learns accurate masks; 2) Transferability - the probabilistic modeling of mask distribution enables the transfer learning of sparsity across domains or tasks. We assessed MaskLLM using 2:4 sparsity on various LLMs, including LLaMA-2, Nemotron-4, and GPT-3, with sizes ranging from 843M to 15B parameters, and our empirical results show substantial improvements over state-of-the-art methods. For instance, leading approaches achieve a perplexity (PPL) of 10 or greater on Wikitext compared to the dense model's 5.12 PPL, but MaskLLM achieves a significantly lower 6.72 PPL solely by learning the masks with frozen weights. Furthermore, MaskLLM's learnable nature allows customized masks for lossless application of 2:4 sparsity to downstream tasks or domains."
+  authors: Gongfan Fang, Hongxu Yin, Saurav Muralidharan, Greg Heinrich, Jeff Pool, Jan Kautz, Pavlo Molchanov, Xinchao Wang
+  linklist:
+    - url: https://arxiv.org/abs/2409.17481
+      display: Arxiv
+
+- title: "Efficient Hybrid Language Model Compression through Group-Aware SSM Pruning"
+  description: Hybrid LLM architectures that combine Attention and State Space Models (SSMs) achieve state-of-the-art accuracy and runtime performance. Recent work has demonstrated that applying compression and distillation to Attention-only models yields smaller, more accurate models at a fraction of the training cost. In this work, we explore the effectiveness of compressing Hybrid architectures. We introduce a novel group-aware pruning strategy that preserves the structural integrity of SSM blocks and their sequence modeling capabilities. Furthermore, we demonstrate the necessity of such SSM pruning to achieve improved accuracy and inference speed compared to traditional approaches. Our compression recipe combines SSM, FFN, embedding dimension, and layer pruning, followed by knowledge distillation-based retraining, similar to the MINITRON technique. Using this approach, we compress the Nemotron-H 8B Hybrid model down to 4B parameters with up to 40x fewer training tokens. The resulting model surpasses the accuracy of similarly-sized models while achieving 2x faster inference, significantly advancing the Pareto frontier.
+  authors: Ali Taghibakhshi, Sharath Turuvekere Sreenivas, Saurav Muralidharan, Marcin Chochowski, Yashaswi Karnati, Raviraj Joshi, Ameya Sunil Mahabaleshwarkar, Zijia Chen, Yoshi Suhara, Oluwatobi Olabiyi, Daniel Korzekwa, Mostofa Patwary, Mohammad Shoeybi, Jan Kautz, Bryan Catanzaro, Ashwath Aithal, Nima Tajbakhsh, Pavlo Molchanov
+  linklist:
+    - url: https://arxiv.org/abs/2504.11409
+      display: Arxiv
+
+- title: "LLM Pruning and Distillation in Practice: The Minitron Approach"
+  description: "We present a comprehensive report on compressing the Llama 3.1 8B and Mistral NeMo 12B models to 4B and 8B parameters, respectively, using pruning and distillation. We explore two distinct pruning strategies: (1) depth pruning and (2) joint hidden/attention/MLP (width) pruning, and evaluate the results on common benchmarks from the LM Evaluation Harness. The models are then aligned with NeMo Aligner and tested in instruct-tuned versions. This approach produces a compelling 4B model from Llama 3.1 8B and a state-of-the-art Mistral-NeMo-Minitron-8B (MN-Minitron-8B for brevity) model from Mistral NeMo 12B. We found that with no access to the original data, it is beneficial to slightly fine-tune teacher models on the distillation dataset. We open-source our base model weights on Hugging Face with a permissive license."
+  authors: Sharath Turuvekere Sreenivas, Saurav Muralidharan, Raviraj Joshi, Marcin Chochowski, Ameya Sunil Mahabaleshwarkar, Gerald Shen, Jiaqi Zeng, Zijia Chen, Yoshi Suhara, Shizhe Diao, Chenhan Yu, Wei-Chun Chen, Hayley Ross, Oluwatobi Olabiyi, Ashwath Aithal, Oleksii Kuchaiev, Daniel Korzekwa, Pavlo Molchanov, Mostofa Patwary, Mohammad Shoeybi, Jan Kautz, Bryan Catanzaro
+  linklist:
+    - url: https://arxiv.org/abs/2408.11796
+      display: Arxiv
+
+- title: "LLaMaFlex: Many-in-one LLMs via Generalized Pruning and Weight Sharing"
+  description: Large Language Model (LLM) providers typically train a family of models, each of a different size targeting a specific deployment scenario. Models in the family are all trained from scratch, making the process extremely resource intensive. Recent work has successfully reduced the cost of training model families through a combination of structured pruning and knowledge distillation; here, only the largest model in the family is trained from scratch, and smaller models are obtained via pruning. We observe that while effective, this strategy must still perform pruning and distillation with hundreds of billions of training tokens for every new model, keeping overall training costs high. In this work, we introduce a novel nested weight-shared architecture named LLaMaFlex that can be pruned across both width and depth dimensions in a zero-shot manner to instantly yield a large number of highly accurate compressed models. LLaMaFlex starts from a pretrained model, and only requires a single continued training phase consisting of ~60B tokens, which trains the elastic network and an end-to-end Gumbel Softmax-based router; this router is able to interpolate smoothly across model sizes, enabling the "train once, deploy many'' paradigm. We train LLaMaFlex on Llama 3.1 8B and use it to zero-shot generate a family of compressed models that achieves accuracy on par with or better than state-of-the-art pruned, elastic/flexible, and trained-from-scratch models.
+  authors: Ruisi Cai, Saurav Muralidharan, Hongxu Yin, Zhangyang Wang, Jan Kautz, Pavlo Molchanov
+  venue: ICLR 2025
+  linklist:
+    - url: https://openreview.net/forum?id=AyC4uxx2HW
+      display: OpenReview
+
+- title: "LongMamba: Enhancing Mamba's Long Context Capabilities via Training-Free Receptive Field Enlargement"
+  description: State space models (SSMs) have emerged as an efficient alternative to Transformer models for language modeling, offering linear computational complexity and constant memory usage as context length increases. However, despite their efficiency in handling long contexts, recent studies have shown that SSMs, such as Mamba models, generally underperform compared to Transformers in long-context understanding tasks. To address this significant shortfall and achieve both efficient and accurate long-context understanding, we propose LongMamba, a training-free technique that significantly enhances the long-context capabilities of Mamba models. LongMamba builds on our discovery that the hidden channels in Mamba can be categorized into local and global channels based on their receptive field lengths, with global channels primarily responsible for long-context capability. These global channels can become the key bottleneck as the input context lengthens. Specifically, when input lengths largely exceed the training sequence length, global channels exhibit limitations in adaptively extend their receptive fields, leading to Mamba's poor long-context performance. The key idea of LongMamba is to mitigate the hidden state memory decay in these global channels by preventing the accumulation of unimportant tokens in their memory. This is achieved by first identifying critical tokens in the global channels and then applying token filtering to accumulate only those critical tokens. Through extensive benchmarking across synthetic and real-world long-context scenarios, LongMamba sets a new standard for Mamba's long-context performance, significantly extending its operational range without requiring additional training.
+  authors: Zhifan Ye, Kejing Xia, Yonggan Fu, Xin Dong, Jihoon Hong, Xiangchi Yuan, Shizhe Diao, Jan Kautz, Pavlo Molchanov, Yingyan Celine Lin
+  linklist:
+    - url: https://arxiv.org/abs/2504.16053
+      display: Arxiv
+  highlight: 0
+
+- title: "Hymba: A Hybrid-head Architecture for Small Language Models"
+  image: hymba.png
+  description: We propose Hymba, a family of small language models featuring a hybrid-head parallel architecture that integrates transformer attention mechanisms with state space models (SSMs) for enhanced efficiency. Attention heads provide high-resolution recall, while SSM heads enable efficient context summarization. Additionally, we introduce learnable meta tokens that are prepended to prompts, storing critical information and alleviating the "forced-to-attend" burden associated with attention mechanisms. This model is further optimized by incorporating cross-layer key-value (KV) sharing and partial sliding window attention, resulting in a compact cache size. Notably, Hymba achieves state-of-the-art results for small LMs.
+  authors: Xin Dong*, Yonggan Fu*, Shizhe Diao, Wonmin Byeon, Zijia Chen, Ameya Sunil Mahabaleshwarkar, Shih-Yang Liu, Matthijs Van Keirsbilck, Min-Hung Chen, Yoshi Suhara, Yingyan Lin, Jan Kautz, Pavlo Molchanov
+  venue: ICLR 2025 (spotlight)
+  linklist:
+    - url: https://arxiv.org/abs/2411.13676
+      display: Arxiv
+    - url: https://huggingface.co/collections/nvidia/hymba-673c35516c12c4b98b5e845f
+      display: HF models
+    - url: https://developer.nvidia.com/blog/hymba-hybrid-head-architecture-boosts-small-language-model-performance/
+      display: Blog
+  highlight: 1
+
 - title: "Compact Language Models via Pruning and Knowledge Distillation"
   image: minitron.png
   description: We develop an efficient model compression strategy for LLMs that combines depth, width, attention and MLP pruning with knowledge-distillation-based retraining. We use our strategy to compress the Nemotron-4 family of LLMs by a factor of 2-4x, and compare their performance to similarly-sized models on a variety of language modeling tasks. Deriving 8B and 4B models from an already pretrained 15B model using our approach requires up to 40x fewer training tokens per model compared to training from scratch; this results in compute cost savings of 1.8x for training the full model family (15B, 8B, and 4B).
@@ -6,7 +108,7 @@
     - url: https://arxiv.org/abs/2407.14679
       display: Arxiv
     - url: https://huggingface.co/collections/nvidia/minitron-669ac727dc9c86e6ab7f0f3e
-      display: HF models  
+      display: HF models
     - url: https://developer.nvidia.com/blog/how-to-prune-and-distill-llama-3-1-8b-to-an-nvidia-llama-3-1-minitron-4b-model/
       display: Blog
   highlight: 1
@@ -35,7 +137,7 @@
       display: GitHub
     - url: https://huggingface.co/collections/nvidia/radio-669f77f1dd6b153f007dd1c6
       display: HF models
-  highlight: 1 
+  highlight: 1
 
 - title: "VILA: Cross-Modality Alignment for Large Language Model"
   image: vila.png
@@ -61,7 +163,6 @@
     - url: https://www.arxiv.org/abs/2407.16286
       display: Arxiv
   highlight: 0
-
 
 - title: "Flextron: Many-in-One Flexible Large Language Model"
   image: flextron.png
@@ -104,7 +205,7 @@
 
 - title: "SpatialRGPT: Grounded Spatial Reasoning in Vision Language Model"
   image: srgpt.png
-  description: Enabling visual grounding in visual language models.
+  description: We introduce Spatial Region GPT (SpatialRGPT), a novel approach to improving spatial reasoning in Vision Language Models (VLMs) by incorporating 3D scene graph data and depth information. It includes a data curation pipeline for learning regional representations and a modular plugin for injecting spatial cues into existing VLM architectures, and SpatialRGPT-Bench -- a comprehensive benchmark for 3D spatial understanding. We show that this method significantly boosts performance and generalization in spatial tasks, including applications in robotics.
   authors: An-Chieh Cheng, Hongxu Yin, Yang Fu, Qiushan Guo, Ruihan Yang, Jan Kautz, Xiaolong Wang, Sifei Liu
   linklist:
     - url: https://arxiv.org/abs/2406.01584
@@ -120,4 +221,3 @@
     - url: https://arxiv.org/abs/2403.02330
       display: Arxiv
   highlight: 0
-

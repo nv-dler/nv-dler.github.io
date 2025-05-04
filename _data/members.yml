@@ -1,34 +1,34 @@
 - name: Pavlo Molchanov
   photo: Pavlo.png
-  info: Team Lead
+  info: Team Lead.
   email: pmolchanov@nvidia.com
   webpage: https://www.pmolchanov.com/
-  scholar: https://scholar.google.com/citations?user=J9PoyoIAAAAJ&hl=en&oi=ao 
+  scholar: https://scholar.google.com/citations?user=J9PoyoIAAAAJ&hl=en&oi=ao
 
 - name: Yingyan (Celine) Lin
   photo: Celine.png
-  info: Visiting Professor
+  info: Visiting Professor.
   email: sdiao@nvidia.com
   webpage: https://eiclab.scs.gatech.edu/pages/team.html
   scholar: https://scholar.google.com/citations?user=dio8IesAAAAJ&hl=en&oi=ao
 
 - name: Hongxu (Danny) Yin
   photo: Danny.png
-  info: Vision-language models
+  info: Vision-language models.
   email: dannyy@nvidia.com
   webpage: https://hongxu-yin.github.io/
   scholar: https://scholar.google.com/citations?user=4gdSoOYAAAAJ&hl=en&oi=ao
 
 - name: Saurav Muralidharan
   photo: Saurav.jpg
-  info: Language model efficiency
+  info: Efficient language models.
   email: sauravm@nvidia.com
   webpage: https://sauravm.com/
   scholar: https://scholar.google.com/citations?user=GXlChWcAAAAJ&hl=en
 
-- name: Greg Heinrich 
+- name: Greg Heinrich
   photo: Greg.jpg
-  info: Vision Foundation, Vision-Language Models.
+  info: Vision Foundation, Vision-Language Models..
   email: gheinrich@nvidia.com
   scholar: https://scholar.google.com/citations?hl=fr&user=VrjibvwAAAAJ
 
@@ -41,12 +41,18 @@
 
 - name: Peter Belcak
   photo: Peter.png
-  info: Efficient perceptron architectures, structured sparsity.
+  info: Efficient and reliable agentic systems.
   email: pbelcak@nvidia.com
 
 - name: Shizhe Diao
   photo: Shizhe.png
-  info: TBD.
+  info: Data quality and data efficiency.
   email: sdiao@nvidia.com
   webpage: https://shizhediao.github.io/
   scholar: https://scholar.google.com/citations?user=NDFQrLQAAAAJ&hl=en
+
+- name: Yonggan Fu
+  photo: Yonggan.jpg
+  info: Efficient language models.
+  email: yonggan.gatech@gmail.com
+  webpage: https://www.yongganfu.com/
