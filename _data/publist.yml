@@ -1,3 +1,61 @@
+- title: "FeatSharp: Your Vision Model Features, Sharper"
+  description: The feature maps of vision encoders are fundamental to myriad modern AI tasks, ranging from core perception algorithms (e.g. semantic segmentation, object detection, depth perception, etc.) to modern multimodal understanding in vision-language models (VLMs). Currently, in computer vision, the frontier of general purpose vision backbones are Vision Transformers (ViT), typically trained using contrastive loss (e.g. CLIP). A key problem with most off-the-shelf ViTs, particularly CLIP, is that these models are inflexibly low resolution. Most run at 224x224px, while the "high resolution" versions are around 378-448px, but still inflexible. We introduce a novel method to coherently and cheaply upsample the feature maps of low-res vision encoders while picking up on fine-grained details that would otherwise be lost due to resolution. We demonstrate the effectiveness of this approach on core perception tasks as well as within agglomerative model (RADIO) training as a way of providing richer targets for distillation.
+  authors: Mike Ranzinger, Greg Heinrich, Pavlo Molchanov, Jan Kautz, Bryan Catanzaro, Andrew Tao
+  venue: ICML 2025
+  image: FeatSharp.png
+  linklist:
+    - url: https://arxiv.org/abs/2502.16025
+      display: Arxiv
+  highlight: 1
+
+- title: "VILA-M3: Enhancing Vision-Language Models with Medical Expert Knowledge"
+  description: "We introduce VILA-M3, a framework that enhances generalist vision-language models (VLMs) with domain-specific medical expertise. VILA-M3 integrates outputs from expert models—such as those trained for tumor detection and abnormality classification—into the instruction fine-tuning process. This approach enables the model to capture fine-grained features in medical data, particularly in radiology, that are often too intricate for standard VLMs. Our experiments demonstrate that VILA-M3 achieves state-of-the-art performance, with an average improvement of ~9% over the prior SOTA model Med-Gemini and ~6% over models trained on specific tasks. This work underscores the importance of incorporating domain expertise to create precise, reliable VLMs for medical applications."
+  authors: Vishwesh Nath, Wenqi Li, Dong Yang, Andriy Myronenko, Mingxin Zheng, Yao Lu, Zhijian Liu, Hongxu Yin, Yee Man Law, Yucheng Tang, Pengfei Guo, Can Zhao, Ziyue Xu, Yufan He, Greg Heinrich, Stephen Aylward, Marc Edgar, Michael Zephyr, Pavlo Molchanov, Baris Turkbey, Holger Roth, Daguang Xu
+  image: VILA-M3.png
+  linklist:
+    - url: https://arxiv.org/abs/2411.12915
+      display: Arxiv
+    - url: https://github.com/George-Dong/VILA-M3
+      display: GitHub
+    - url: https://huggingface.co/MONAI/Llama3-VILA-M3-3B
+      display: Hugging Face Model
+  highlight: 0
+
+- title: "NaVILA: Legged Robot Vision-Language-Action Model for Navigation"
+  description: "We propose NaVILA, a two-level framework that unifies a Vision-Language-Action (VLA) model with locomotion skills for legged robots. NaVILA first generates mid-level actions with spatial information in the form of language (e.g., 'moving forward 75cm'), which serve as inputs for a visual locomotion reinforcement learning policy for execution. This approach allows for flexible human commands and enables robots to navigate through challenging and cluttered scenes. NaVILA substantially improves previous approaches on existing benchmarks. The same advantages are demonstrated in our newly developed benchmarks with IsaacLab, featuring more realistic scenes, low-level controls, and real-world robot experiments."
+  authors: An-Chieh Cheng, Yandong Ji, Zhaojing Yang, Zaitian Gongye, Xueyan Zou, Jan Kautz, Erdem Bıyık, Hongxu Yin, Sifei Liu, Xiaolong Wang
+  image: NaVILA.png
+  linklist:
+    - url: https://arxiv.org/abs/2412.04453
+      display: Arxiv
+    - url: https://navila-bot.github.io/
+      display: Project Page
+  highlight: 0
+
+- title: "NVILA: Efficient Frontier Visual Language Models"
+  description: "We introduce NVILA, a family of open visual language models (VLMs) designed to optimize both efficiency and accuracy. Building upon VILA, NVILA employs a 'scale-then-compress' strategy—first enhancing spatial and temporal resolutions to preserve visual details, then compressing visual tokens to reduce computational overhead. This approach enables NVILA to efficiently process high-resolution images and long videos. Our systematic investigation enhances NVILA's efficiency throughout its lifecycle, from training and fine-tuning to deployment. NVILA matches or surpasses the accuracy of many leading open and proprietary VLMs across a wide range of image and video benchmarks. Simultaneously, it reduces training costs by 4.5×, fine-tuning memory usage by 3.4×, pre-filling latency by 1.6–2.2×, and decoding latency by 1.2–2.8×."
+  authors: Zhijian Liu, Ligeng Zhu, Baifeng Shi, Zhuoyang Zhang, Yuming Lou, Shang Yang, Haocheng Xi, Shiyi Cao, Yuxian Gu, Dacheng Li, Xiuyu Li, Yunhao Fang, Yukang Chen, Cheng-Yu Hsieh, De-An Huang, An-Chieh Cheng, Vishwesh Nath, Jinyi Hu, Sifei Liu, Ranjay Krishna, Daguang Xu, Xiaolong Wang, Pavlo Molchanov, Jan Kautz, Hongxu Yin, Song Han, Yao Lu
+  image: NVILA.png
+  linklist:
+    - url: https://arxiv.org/abs/2412.04468
+      display: Arxiv
+    - url: https://nvlabs.github.io/VILA/
+      display: Project Page
+    - url: https://github.com/NVlabs/VILA
+      display: GitHub
+  highlight: 1
+
+- title: "VILA-HD: Scaling Vision Pre-Training to 4K Resolution"
+  description: "We introduce PS3, a framework that scales CLIP-style vision pre-training to 4K resolution with near-constant cost by selectively processing local regions and contrasting them with detailed captions. This enables high-resolution representation learning with greatly reduced computational overhead. The resulting model, VILA-HD, significantly improves high-resolution visual perception compared to baselines without high-resolution vision pre-training, such as AnyRes and S², while using up to 4.3× fewer tokens. VILA-HD outperforms previous multi-modal large language models (MLLMs), including NVILA and Qwen2-VL, across multiple benchmarks. To further evaluate high-resolution perception, we propose 4KPro, a new benchmark of image QA at 4K resolution, on which VILA-HD achieves a 14.5% improvement over GPT-4o and a 3.2% improvement with 2.96× speedup over Qwen2-VL."
+  authors: Baifeng Shi, Boyi Li, Han Cai, Yao Lu, Sifei Liu, Marco Pavone, Jan Kautz, Song Han, Trevor Darrell, Pavlo Molchanov, Hongxu Yin
+  image: VILA-HD.png
+  linklist:
+    - url: https://arxiv.org/abs/2503.19903
+      display: Arxiv
+    - url: https://research.nvidia.com/labs/lpr/publication/shi2025vila-hd/
+      display: PubPage
+  highlight: 1
+
 - title: "CLIMB: CLustering-based Iterative Data Mixture Bootstrapping"
   description: "We introduce CLustering-based Iterative Data Mixture Bootstrapping (CLIMB), an automated framework that discovers, evaluates, and refines data mixtures in a pre-training setting. Specifically, CLIMB embeds and clusters large-scale datasets in a semantic space and then iteratively searches for optimal mixtures using a smaller proxy model and a predictor. When continuously trained on 400B tokens with this mixture, our 950M model exceeds the state-of-the-art Llama-3.2-1B by 2.0% averaged across 12 general reasoning tasks. Moreover, we observe that optimizing for a specific domain (e.g., Social Sciences) yields a 5% improvement over random sampling. We introduce ClimbLab, a filtered 1.3-trillion-token corpus with 20 clusters as a research playground, and ClimbMix, a compact yet powerful 400-billion-token dataset designed for efficient pre-training that delivers superior performance under an equal token budget."
   authors: Shizhe Diao, Yu Yang, Yonggan Fu, Xin Dong, Dan Su, Markus Kliegl, Zijia Chen, Peter Belcak, Yoshi Suhara, Hongxu Yin, Mostofa Patwary, Yingyan (Celine) Lin, Jan Kautz, Pavlo Molchanov
@@ -23,16 +81,11 @@
   description: "Agglomerative models have recently emerged as a powerful approach to training vision foundation models, leveraging multi-teacher distillation from existing models such as CLIP, DINO, and SAM. This strategy enables the efficient creation of robust models, combining the strengths of individual teachers while significantly reducing computational and resource demands. In this paper, we thoroughly analyze state-of-the-art agglomerative models, identifying critical challenges including resolution mode shifts, teacher imbalance, idiosyncratic teacher artifacts, and an excessive number of output tokens. To address these issues, we propose several novel solutions: multi-resolution training, mosaic augmentation, and improved balancing of teacher loss functions. Specifically, in the context of Vision Language Models, we introduce a token compression technique to maintain high-resolution information within a fixed token count."
   authors: Greg Heinrich, Mike Ranzinger, Hongxu (Danny)Yin, Yao Lu, Jan Kautz, Andrew Tao, Bryan Catanzaro, Pavlo Molchanov
   venue: CVPR 2025
+  image: RADIOv2.5.png
   linklist:
     - url: https://arxiv.org/abs/2412.07679
       display: Arxiv
-
-- title: "FeatSharp: Your Vision Model Features, Sharper"
-  description: The feature maps of vision encoders are fundamental to myriad modern AI tasks, ranging from core perception algorithms (e.g. semantic segmentation, object detection, depth perception, etc.) to modern multimodal understanding in vision-language models (VLMs). Currently, in computer vision, the frontier of general purpose vision backbones are Vision Transformers (ViT), typically trained using contrastive loss (e.g. CLIP). A key problem with most off-the-shelf ViTs, particularly CLIP, is that these models are inflexibly low resolution. Most run at 224x224px, while the "high resolution" versions are around 378-448px, but still inflexible. We introduce a novel method to coherently and cheaply upsample the feature maps of low-res vision encoders while picking up on fine-grained details that would otherwise be lost due to resolution. We demonstrate the effectiveness of this approach on core perception tasks as well as within agglomerative model (RADIO) training as a way of providing richer targets for distillation.
-  authors: Mike Ranzinger, Greg Heinrich, Pavlo Molchanov, Jan Kautz, Bryan Catanzaro, Andrew Tao
-  linklist:
-    - url: https://arxiv.org/abs/2502.16025
-      display: Arxiv
+  highlight: 1
 
 - title: "Nemotron-H: A Family of Accurate and Efficient Hybrid Mamba-Transformer Models"
   description: "As inference-time scaling becomes critical for enhanced reasoning capabilities, it is increasingly becoming important to build models that are efficient to infer. We introduce Nemotron-H, a family of 8B and 56B/47B hybrid Mamba-Transformer models designed to reduce inference cost for a given accuracy level. To achieve this goal, we replace the majority of self-attention layers in the common Transformer model architecture with Mamba layers that perform constant computation and require constant memory per generated token. We show that Nemotron-H models offer either better or on-par accuracy compared to other similarly-sized state-of-the-art open-sourced Transformer models (e.g., Qwen-2.5-7B/72B and Llama-3.1-8B/70B), while being up to 3× faster at inference. To further increase inference speed and reduce the memory required at inference time, we created Nemotron-H-47B-Base from the 56B model using a new compression via pruning and distillation technique called MiniPuzzle. Nemotron-H-47B-Base achieves similar accuracy to the 56B model, but is 20% faster to infer. In addition, we introduce an FP8-based training recipe and show that it can achieve on par results with BF16-based training. This recipe is used to train the 56B model. We are releasing Nemotron-H base model checkpoints with support in Hugging Face and NeMo."
@@ -122,7 +175,7 @@
       display: Arxiv
     - url: https://github.com/NVlabs/DoRA
       display: Code
-  highlight: 1
+  highlight: 0
 
 - title: "AM-RADIO: Agglomerative Vision Foundation Model Reduce All Domains Into One"
   image: radio_pub.png
@@ -136,7 +189,7 @@
       display: GitHub
     - url: https://huggingface.co/collections/nvidia/radio-669f77f1dd6b153f007dd1c6
       display: HF models
-  highlight: 1
+  highlight: 0
 
 - title: "VILA: Cross-Modality Alignment for Large Language Model"
   image: vila.png
@@ -152,7 +205,7 @@
       display: Blog
     - url: https://developer.nvidia.com/blog/visual-language-intelligence-and-edge-ai-2-0/
       display: Tutorial
-  highlight: 1
+  highlight: 0
 
 - title: "A Deeper Look at Depth Pruning of LLMs"
   image: depthpruning.png
@@ -191,7 +244,7 @@
   linklist:
     - url: https://arxiv.org/abs/2405.19335
       display: Arxiv
-  highlight: 1
+  highlight: 0
 
 - title: "VILA<sup>2</sup>: VILA Augmented VILA"
   image: vila2.png
@@ -200,7 +253,7 @@
   linklist:
     - url: https://arxiv.org/abs/2407.17453
       display: Arxiv
-  highlight: 1
+  highlight: 0
 
 - title: "SpatialRGPT: Grounded Spatial Reasoning in Vision Language Model"
   image: srgpt.png
@@ -209,7 +262,7 @@
   linklist:
     - url: https://arxiv.org/abs/2406.01584
       display: Arxiv
-  highlight: 1
+  highlight: 0
 
 - title: "RegionGPT: Towards Region Understanding Vision Language Model"
   image: srgpt.png
