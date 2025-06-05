@@ -18,8 +18,8 @@ Currently, we study:
 
 - novel and efficient model architectures;
 - post-training model optimization with techniques such as compression, sparsity, quantization, and neural architecture search;
-- powerful, universal representations of images and videos,
-- efficiency and reliability of agentic systems,
+- powerful, universal representations of images and videos;
+- efficiency and reliability of agentic systems;
 - efficiency and reliability of applications of language models and multi-modal models in intelligent assistants, robotics, and autonomous driving.
 
 <br clear="left"/>
