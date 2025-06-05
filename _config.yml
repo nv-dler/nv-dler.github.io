@@ -7,10 +7,10 @@
 
 # Site settings
 title: DLER @ NVR
-email: your-email@domain.com
+email: agents@nvidia.com
 description: > # this means to ignore newlines until "baseurl:"
   Website of the DLER group at NVIDIA Research.
-baseurl: "/horseshoeketchup.github.io"
+baseurl: "/"
 url: "https://nv-dler.github.io"
 
 include:
@@ -26,8 +26,6 @@ highlighter: rouge
 lsi: false
 excerpt_separator: "\n\n"
 incremental: false
-
-
 
 # Markdown Processing
 kramdown:
