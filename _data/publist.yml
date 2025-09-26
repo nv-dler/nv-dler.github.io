@@ -5,7 +5,7 @@
   linklist:
     - url: https://arxiv.org/abs/2506.15702
       display: Arxiv
-    - url: https://research.nvidia.com/labs/lpr/mft
+    - url: https://research.nvidia.com/labs/lpr/minifinetuning
       display: Project Page
   highlight: 1
 
