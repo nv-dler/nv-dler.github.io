@@ -1,48 +1,14 @@
 <head>
   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#76b900">
   <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
-  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description | strip_newlines }}{% endif %}">
-  <meta name="robots" content="{{ page.robots | default: 'index, follow' }}">
-  <link rel="canonical" href="{% if page.canonical %}{{ page.canonical | absolute_url }}{% else %}{{ page.url | replace: 'index.html', '' | absolute_url }}{% endif %}">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="{{ '/css/main.css' | relative_url }}">
-  <link rel="icon" href="{{ '/favicon.ico' | relative_url }}">
-  <meta property="og:site_name" content="NVIDIA DLER">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="{{ page.title | default: site.title | escape }}">
-  <meta property="og:description" content="{{ page.excerpt | default: site.description | strip_html | strip_newlines | escape }}">
-  <meta property="og:url" content="{{ page.url | absolute_url }}">
-  <meta name="twitter:card" content="summary">
-  {% if page.url == '/' %}
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "ResearchOrganization",
-    "name": "NVIDIA Deep Learning Efficiency Research",
-    "alternateName": "NVIDIA DLER",
-    "url": "{{ site.url }}",
-    "parentOrganization": {
-      "@type": "Organization",
-      "name": "NVIDIA Research",
-      "url": "https://www.nvidia.com/en-us/research/"
-    },
-    "foundingDate": "2023",
-    "description": "{{ site.description | strip_newlines | escape }}",
-    "email": "{{ site.email }}",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "2788 San Tomas Expressway",
-      "addressLocality": "Santa Clara",
-      "addressRegion": "CA",
-      "postalCode": "95051",
-      "addressCountry": "US"
-    }
-  }
-  </script>
-  {% endif %}
-  {% if jekyll.environment == 'production' %}{% include analytics.html %}{% endif %}
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl | prepend: site.url}}">
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+
+{% if jekyll.environment == 'production' %}
+{% include analytics.html %}
+{% endif %}
+
 </head>
