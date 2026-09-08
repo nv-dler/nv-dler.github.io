@@ -1,22 +1,15 @@
-<div class="navbar navbar-default navbar-fixed-top" role="navigation">
-  <div class="container-fluid">
-	<div class="navbar-header">
-	  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
-		<span class="sr-only">Toggle navigation</span>
-		<span class="icon-bar"></span>
-		<span class="icon-bar"></span>
-		<span class="icon-bar"></span>
-	  </button>
-	
-    <a class="navbar-brand" href="{{ site.url }}{{ site.baseurl }}/">DLER @ NVIDIA Research</a>
-	</div>
-	<div class="collapse navbar-collapse" id="navbar-collapse-1">
-	  <ul class="nav navbar-nav navbar-right">
-		<li><a href="{{ site.url }}{{ site.baseurl }}/">Home</a></li>
-		<li><a href="{{ site.url }}{{ site.baseurl }}/team">Team</a></li>
-		<li><a href="{{ site.url }}{{ site.baseurl }}/publications">Publications</a></li>
-		<!-- <li><a href="{{ site.url }}{{ site.baseurl }}/research">Research</a></li> -->
-	  </ul>
-	</div>
+<header class="site-header">
+  <div class="shell nav-shell">
+    <a class="wordmark" href="{{ '/' | relative_url }}" aria-label="NVIDIA DLER home">
+      <span class="wordmark-mark" aria-hidden="true"></span>
+      <span>DLER <i>@ NVIDIA Research</i></span>
+    </a>
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a href="{{ '/#research' | relative_url }}">Research</a>
+      <a href="{{ '/#publications' | relative_url }}">Publications</a>
+      <a href="{{ '/#team' | relative_url }}">Team</a>
+      <a href="{{ '/#news' | relative_url }}">News</a>
+      <a class="nav-cta" href="{{ '/#join' | relative_url }}">Join us</a>
+    </nav>
   </div>
-</div>
+</header>
