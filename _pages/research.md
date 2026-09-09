@@ -1,15 +1,7 @@
 ---
-title: "DLER - Research"
-layout: textlay
-excerpt: "DLER -- Research"
-sitemap: false
+title: "Research"
+layout: redirect
 permalink: /research/
+redirect_to: /#research
+sitemap: false
 ---
-
-# Research
-
-Updating soon -- stay put. (Aug 11 2023)
-
-![]({{ site.url }}{{ site.baseurl }}/images/respic/SciPost.png){: style="width: 70%; float: center; margin: 0px"}
-
-
