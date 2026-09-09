@@ -57,6 +57,23 @@
       display: Models
   highlight: 1
 
+- title: "GDPO: Group reward-Decoupled Normalization Policy Optimization for Multi-reward RL Optimization"
+  description: "GDPO improves GRPO for reinforcement learning with multiple rewards by normalizing each reward separately before combining them. This preserves distinctions that GRPO can collapse when it sums rewards first, while final batch normalization supports stable optimization across correctness, formatting, length, and other objectives."
+  authors: Shih-Yang Liu, Xin Dong, Ximing Lu, Shizhe Diao, Peter Belcak, Mingjie Liu, Min-Hung Chen, Hongxu Yin, Yu-Chiang Frank Wang, Kwang-Ting Cheng, Yejin Choi, Jan Kautz, Pavlo Molchanov
+  venue: ICML 2026
+  image: GDPO.png
+  image_fit: contain
+  linklist:
+    - url: https://arxiv.org/abs/2601.05242
+      display: Arxiv
+    - url: https://nvlabs.github.io/GDPO/
+      display: Project Page
+    - url: https://github.com/NVlabs/GDPO
+      display: Code
+    - url: https://huggingface.co/papers/2601.05242
+      display: Hugging Face
+  highlight: 1
+
 - title: "Small Language Models are the Future of Agentic AI"
   description: "Small language models (SLMs) are often overlooked in favor of larger, more powerful models. However, we argue that small LLMs are the future of agentic AI due to their efficiency, accessibility, and adaptability. Here we detail our position on the future of agentic AI, arguing with evidence that that the industry and the community are to benefit from a switch from LLMs to SLMs. Our position is based on three key points: That SLMs are sufficiently powerful, inherently more suitable, and necessarily more economical for many invocations in agentic systems. We then draw a conclusion that they are, to a large extent, the future of agentic AI. We also outline a LLM-to-SLM conversion algorithm that can be employed to produce a SLM for a specific agentic workflow. We welcome correspondence on the topic."
   authors: Peter Belcak, Greg Heinrich, Shizhe Diao, Yonggan Fu, Xin Dong, Saurav Muralidharan, Yingyan Celine Lin, Pavlo Molchanov
@@ -259,15 +276,20 @@
 
 - title: "DoRA: Weight-Decomposed Low-Rank Adaptation"
   image: dora.png
-  description: DoRA is a parameter efficient finetuning technique. DoRA consistently outperforms LoRA on fine-tuning LLaMA, LLaVA, and VL-BART on various downstream tasks, such as commonsense reasoning, visual instruction tuning, and image/video-text understanding.
+  image_fit: contain
+  description: "DoRA improves low-rank adaptation by decomposing each pretrained weight into magnitude and direction, training the magnitude directly while using LoRA for directional updates. Across LLaMA, LLaVA, and VL-BART, it more closely resembles full fine-tuning and consistently outperforms LoRA while retaining low parameter costs and adding no inference latency."
   authors: Shih-Yang Liu, Chien-Yi Wang, Hongxu Yin, Pavlo Molchanov, Yu-Chiang Frank Wang, Kwang-Ting Cheng, Min-Hung Chen
   venue: ICML 2024 (oral)
   linklist:
-    - url: https://arxiv.org/abs/2312.07533
+    - url: https://arxiv.org/abs/2402.09353
       display: Arxiv
+    - url: https://nbasyl.github.io/DoRA-project-page/
+      display: Project Page
     - url: https://github.com/NVlabs/DoRA
       display: Code
-  highlight: 0
+    - url: https://developer.nvidia.com/blog/introducing-dora-a-high-performing-alternative-to-lora-for-fine-tuning/
+      display: Blog
+  highlight: 1
 
 - title: "AM-RADIO: Agglomerative Vision Foundation Model Reduce All Domains Into One"
   image: radio_pub.png
