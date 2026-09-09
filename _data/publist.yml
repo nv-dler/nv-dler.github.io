@@ -1,3 +1,20 @@
+- title: "OmniVinci: Enhancing Architecture and Data for Omni-Modal Understanding LLM"
+  description: "OmniVinci is NVIDIA's first systematic research of new model architecture and data curation for omni-modal LLMs, resulting in a model that achieves state-of-the-art performance in joint perception of images, videos, audio, and text."
+  authors: Hanrong Ye, ..., Jan Kautz, Hongxu Yin, Pavlo Molchanov
+  venue: ICLR 2026
+  image: OmniVinci.png
+  image_fit: contain
+  linklist:
+    - url: https://arxiv.org/abs/2510.15870
+      display: Arxiv
+    - url: https://nvlabs.github.io/OmniVinci/
+      display: Project Page
+    - url: https://github.com/NVlabs/OmniVinci
+      display: Code
+    - url: https://huggingface.co/nvidia/omnivinci
+      display: Models
+  highlight: 1
+
 - title: "Minifinetuning: Low-Data Generation Domain Adaptation through Corrective Self-Distillation"
   description: "Finetuning language models for a new domain inevitably leads to the deterioration of their general performance. This becomes more pronounced the more limited the finetuning data resource.We introduce minifinetuning (MFT), a method for language model domain adaptation that considerably reduces the effects of overfitting-induced degeneralization in low-data settings and which does so in the absence of any pre-training data for replay. MFT demonstrates 2-10x more favourable specialization-to-degeneralization ratios than standard finetuning across a wide range of models and domains and exhibits an intrinsic robustness to overfitting when data in the new domain is scarce and down to as little as 500 samples.Employing corrective self-distillation that is individualized on the sample level, MFT outperforms parameter-efficient finetuning methods, demonstrates replay-like degeneralization mitigation properties, and is composable with either for a combined effect."
   authors: Peter Belcak, Greg Heinrich, Jan Kautz, Pavlo Molchanov

@@ -80,7 +80,7 @@ permalink: /
       {% if publication.highlight == 1 %}
       <article class="publication-card">
         <div class="publication-image-wrap">
-          <img src="{{ '/images/pubpic/' | append: publication.image | relative_url }}" alt="Illustration for {{ publication.title | strip_html | escape }}" loading="lazy" width="640" height="360">
+          <img{% if publication.image_fit == 'contain' %} class="publication-image-contain"{% endif %} src="{{ '/images/pubpic/' | append: publication.image | relative_url }}" alt="Illustration for {{ publication.title | strip_html | escape }}" loading="lazy" width="640" height="360">
           {% if publication.venue %}<span class="venue">{{ publication.venue }}</span>{% endif %}
         </div>
         <div class="publication-body">

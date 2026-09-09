@@ -1,6 +1,6 @@
 - name: Pavlo Molchanov
   photo: Pavlo.png
-  info: Team Lead.
+  info: Team lead.
   email: pmolchanov@nvidia.com
   webpage: https://www.pmolchanov.com/
   scholar: https://scholar.google.com/citations?user=J9PoyoIAAAAJ&hl=en&oi=ao
@@ -14,13 +14,13 @@
 
 - name: Greg Heinrich
   photo: Greg.jpg
-  info: Vision Foundation, Vision-Language Models..
+  info: Vision foundation, vision-language models.
   email: gheinrich@nvidia.com
   scholar: https://scholar.google.com/citations?hl=fr&user=VrjibvwAAAAJ
 
 - name: Peter Belcak
   photo: Peter.png
-  info: Reliable and efficient agentic systems.
+  info: Local frontier intelligence.
   email: pbelcak@nvidia.com
   webpage: https://pbelcak.com/
   scholar: https://scholar.google.com/citations?user=8EQ-RvEAAAAJ
@@ -34,7 +34,7 @@
 
 - name: Jindong Jiang
   photo: Jindong.png
-  info: Agentic AI and efficient language and vision-language models.
+  info: Agentic AI, efficient language and vision-language models.
   email: jindongj@nvidia.com
   webpage: https://www.jindongjiang.me/
   scholar: https://scholar.google.com/citations?user=6oo8xOQAAAAJ&hl=en&sortby=pubdate
@@ -55,7 +55,7 @@
 
 - name: Shih-Yang Liu
   photo: Shih-Yang.png
-  info: Efficient deep learning and reinforcement learning for LLM reasoning.
+  info: Reinforcement learning.
   email: shihyangl@nvidia.com
   webpage: https://nbasyl.github.io/
   scholar: https://scholar.google.com/citations?user=eBXRoDgAAAAJ&hl=en
