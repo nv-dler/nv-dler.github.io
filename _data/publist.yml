@@ -1,3 +1,32 @@
+- title: "Nemotron-Labs-Diffusion-Image: Advancing Masked Discrete Diffusion for High-Resolution Image Synthesis"
+  description: "NL-Diffusion-Image generates high-resolution images through masked discrete diffusion, using grouped cross-entropy and token editing to improve training efficiency, image fidelity, and self-correction while supporting flexible few-step generation."
+  authors: Shufan Li, Greg Heinrich, Hanrong Ye, Yonggan Fu, Aditya Grover, Jan Kautz, Pavlo Molchanov
+  image: NL-Diffusion-Image.png
+  image_fit: contain
+  linklist:
+    - url: https://arxiv.org/abs/2606.29814
+      display: Arxiv
+    - url: https://homepage.jackli.org/projects/nl-diffusion-image/index.html
+      display: Project Page
+    - url: https://huggingface.co/nvidia/NL-Diffusion-Image
+      display: Models
+    - url: https://huggingface.co/spaces/nvidia/NL-Diffusion-Image
+      display: Demo
+  highlight: 1
+
+- title: "RADIO1D: Elastic Representations for Condensed Vision Modeling"
+  description: "RADIO1D compresses images into a compact, variable-length 1D token sequence, enabling accurate scene understanding with as little as one token and flexible accuracy-efficiency tradeoffs for vision-language models."
+  authors: Greg Heinrich, Mike Ranzinger, Collin McCarthy, Natan Bagrov, Eugene Khvedchenya, Bryan Catanzaro, Jan Kautz, Andrew Tao, Pavlo Molchanov
+  venue: ICML 2026
+  image: RADIO1D.jpg
+  image_fit: contain
+  linklist:
+    - url: https://arxiv.org/abs/2607.03624
+      display: Arxiv
+    - url: https://github.com/NVlabs/RADIO#radio1d-research
+      display: Code
+  highlight: 1
+
 - title: "OmniVinci: Enhancing Architecture and Data for Omni-Modal Understanding LLM"
   description: "OmniVinci is NVIDIA's first systematic research of new model architecture and data curation for omni-modal LLMs, resulting in a model that achieves state-of-the-art performance in joint perception of images, videos, audio, and text."
   authors: Hanrong Ye, ..., Jan Kautz, Hongxu Yin, Pavlo Molchanov
