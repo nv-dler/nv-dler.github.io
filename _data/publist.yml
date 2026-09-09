@@ -1,3 +1,16 @@
+- title: "RADIO1D: Elastic Representations for Condensed Vision Modeling"
+  description: "RADIO1D compresses images into a compact, variable-length 1D token sequence, enabling accurate scene understanding with as little as one token and flexible accuracy-efficiency tradeoffs for vision-language models."
+  authors: Greg Heinrich, Mike Ranzinger, Collin McCarthy, Natan Bagrov, Eugene Khvedchenya, Bryan Catanzaro, Jan Kautz, Andrew Tao, Pavlo Molchanov
+  venue: ICML 2026
+  image: RADIO1D.jpg
+  image_fit: contain
+  linklist:
+    - url: https://arxiv.org/abs/2607.03624
+      display: Arxiv
+    - url: https://github.com/NVlabs/RADIO#radio1d-research
+      display: Code
+  highlight: 1
+
 - title: "Nemotron-Labs-Diffusion-Image: Advancing Masked Discrete Diffusion for High-Resolution Image Synthesis"
   description: "NL-Diffusion-Image generates high-resolution images through masked discrete diffusion, using grouped cross-entropy and token editing to improve training efficiency, image fidelity, and self-correction while supporting flexible few-step generation."
   authors: Shufan Li, Greg Heinrich, Hanrong Ye, Yonggan Fu, Aditya Grover, Jan Kautz, Pavlo Molchanov
@@ -12,19 +25,6 @@
       display: Models
     - url: https://huggingface.co/spaces/nvidia/NL-Diffusion-Image
       display: Demo
-  highlight: 1
-
-- title: "RADIO1D: Elastic Representations for Condensed Vision Modeling"
-  description: "RADIO1D compresses images into a compact, variable-length 1D token sequence, enabling accurate scene understanding with as little as one token and flexible accuracy-efficiency tradeoffs for vision-language models."
-  authors: Greg Heinrich, Mike Ranzinger, Collin McCarthy, Natan Bagrov, Eugene Khvedchenya, Bryan Catanzaro, Jan Kautz, Andrew Tao, Pavlo Molchanov
-  venue: ICML 2026
-  image: RADIO1D.jpg
-  image_fit: contain
-  linklist:
-    - url: https://arxiv.org/abs/2607.03624
-      display: Arxiv
-    - url: https://github.com/NVlabs/RADIO#radio1d-research
-      display: Code
   highlight: 1
 
 - title: "Star Elastic: Many-in-One Reasoning LLMs with Efficient Budget Control"
@@ -57,6 +57,17 @@
       display: Models
   highlight: 1
 
+- title: "Small Language Models are the Future of Agentic AI"
+  description: "Small language models (SLMs) are often overlooked in favor of larger, more powerful models. However, we argue that small LLMs are the future of agentic AI due to their efficiency, accessibility, and adaptability. Here we detail our position on the future of agentic AI, arguing with evidence that that the industry and the community are to benefit from a switch from LLMs to SLMs. Our position is based on three key points: That SLMs are sufficiently powerful, inherently more suitable, and necessarily more economical for many invocations in agentic systems. We then draw a conclusion that they are, to a large extent, the future of agentic AI. We also outline a LLM-to-SLM conversion algorithm that can be employed to produce a SLM for a specific agentic workflow. We welcome correspondence on the topic."
+  authors: Peter Belcak, Greg Heinrich, Shizhe Diao, Yonggan Fu, Xin Dong, Saurav Muralidharan, Yingyan Celine Lin, Pavlo Molchanov
+  image: slm_agents2.png
+  linklist:
+    - url: https://arxiv.org/abs/2506.02153
+      display: Arxiv
+    - url: https://research.nvidia.com/labs/lpr/slm-agents/
+      display: Project/Correspondence Page
+  highlight: 1
+
 - title: "Minifinetuning: Low-Data Generation Domain Adaptation through Corrective Self-Distillation"
   description: "Finetuning language models for a new domain inevitably leads to the deterioration of their general performance. This becomes more pronounced the more limited the finetuning data resource.We introduce minifinetuning (MFT), a method for language model domain adaptation that considerably reduces the effects of overfitting-induced degeneralization in low-data settings and which does so in the absence of any pre-training data for replay. MFT demonstrates 2-10x more favourable specialization-to-degeneralization ratios than standard finetuning across a wide range of models and domains and exhibits an intrinsic robustness to overfitting when data in the new domain is scarce and down to as little as 500 samples.Employing corrective self-distillation that is individualized on the sample level, MFT outperforms parameter-efficient finetuning methods, demonstrates replay-like degeneralization mitigation properties, and is composable with either for a combined effect."
   authors: Peter Belcak, Greg Heinrich, Jan Kautz, Pavlo Molchanov
@@ -68,25 +79,17 @@
       display: Project Page
   highlight: 1
 
-- title: "FeatSharp: Your Vision Model Features, Sharper"
-  description: The feature maps of vision encoders are fundamental to myriad modern AI tasks, ranging from core perception algorithms (e.g. semantic segmentation, object detection, depth perception, etc.) to modern multimodal understanding in vision-language models (VLMs). Currently, in computer vision, the frontier of general purpose vision backbones are Vision Transformers (ViT), typically trained using contrastive loss (e.g. CLIP). A key problem with most off-the-shelf ViTs, particularly CLIP, is that these models are inflexibly low resolution. Most run at 224x224px, while the "high resolution" versions are around 378-448px, but still inflexible. We introduce a novel method to coherently and cheaply upsample the feature maps of low-res vision encoders while picking up on fine-grained details that would otherwise be lost due to resolution. We demonstrate the effectiveness of this approach on core perception tasks as well as within agglomerative model (RADIO) training as a way of providing richer targets for distillation.
-  authors: Mike Ranzinger, Greg Heinrich, Pavlo Molchanov, Jan Kautz, Bryan Catanzaro, Andrew Tao
-  venue: ICML 2025
-  image: FeatSharp.png
+- title: "CLIMB: CLustering-based Iterative Data Mixture Bootstrapping"
+  description: "We introduce CLustering-based Iterative Data Mixture Bootstrapping (CLIMB), an automated framework that discovers, evaluates, and refines data mixtures in a pre-training setting. Specifically, CLIMB embeds and clusters large-scale datasets in a semantic space and then iteratively searches for optimal mixtures using a smaller proxy model and a predictor. When continuously trained on 400B tokens with this mixture, our 950M model exceeds the state-of-the-art Llama-3.2-1B by 2.0% averaged across 12 general reasoning tasks. Moreover, we observe that optimizing for a specific domain (e.g., Social Sciences) yields a 5% improvement over random sampling. We introduce ClimbLab, a filtered 1.3-trillion-token corpus with 20 clusters as a research playground, and ClimbMix, a compact yet powerful 400-billion-token dataset designed for efficient pre-training that delivers superior performance under an equal token budget."
+  authors: Shizhe Diao, Yu Yang, Yonggan Fu, Xin Dong, Dan Su, Markus Kliegl, Zijia Chen, Peter Belcak, Yoshi Suhara, Hongxu Yin, Mostofa Patwary, Yingyan (Celine) Lin, Jan Kautz, Pavlo Molchanov
+  image: CLIMB.png
   linklist:
-    - url: https://arxiv.org/abs/2502.16025
+    - url: https://arxiv.org/abs/2504.13161
       display: Arxiv
-  highlight: 1
-
-- title: "Small Language Models are the Future of Agentic AI"
-  description: "Small language models (SLMs) are often overlooked in favor of larger, more powerful models. However, we argue that small LLMs are the future of agentic AI due to their efficiency, accessibility, and adaptability. Here we detail our position on the future of agentic AI, arguing with evidence that that the industry and the community are to benefit from a switch from LLMs to SLMs. Our position is based on three key points: That SLMs are sufficiently powerful, inherently more suitable, and necessarily more economical for many invocations in agentic systems. We then draw a conclusion that they are, to a large extent, the future of agentic AI. We also outline a LLM-to-SLM conversion algorithm that can be employed to produce a SLM for a specific agentic workflow. We welcome correspondence on the topic."
-  authors: Peter Belcak, Greg Heinrich, Shizhe Diao, Yonggan Fu, Xin Dong, Saurav Muralidharan, Yingyan Celine Lin, Pavlo Molchanov
-  image: slm_agents2.png
-  linklist:
-    - url: https://arxiv.org/abs/2506.02153
-      display: Arxiv
-    - url: https://research.nvidia.com/labs/lpr/slm-agents/
-      display: Project/Correspondence Page
+    - url: https://huggingface.co/collections/nvidia/climb-datasets-67e428bdb9aaced2acda191f
+      display: HF datasets
+    - url: https://research.nvidia.com/labs/lpr/climb/
+      display: Homepage
   highlight: 1
 
 - title: "VILA-M3: Enhancing Vision-Language Models with Medical Expert Knowledge"
@@ -113,19 +116,6 @@
       display: Project Page
   highlight: 0
 
-- title: "NVILA: Efficient Frontier Visual Language Models"
-  description: "We introduce NVILA, a family of open visual language models (VLMs) designed to optimize both efficiency and accuracy. Building upon VILA, NVILA employs a 'scale-then-compress' strategy—first enhancing spatial and temporal resolutions to preserve visual details, then compressing visual tokens to reduce computational overhead. This approach enables NVILA to efficiently process high-resolution images and long videos. Our systematic investigation enhances NVILA's efficiency throughout its lifecycle, from training and fine-tuning to deployment. NVILA matches or surpasses the accuracy of many leading open and proprietary VLMs across a wide range of image and video benchmarks. Simultaneously, it reduces training costs by 4.5×, fine-tuning memory usage by 3.4×, pre-filling latency by 1.6–2.2×, and decoding latency by 1.2–2.8×."
-  authors: Zhijian Liu, Ligeng Zhu, Baifeng Shi, Zhuoyang Zhang, Yuming Lou, Shang Yang, Haocheng Xi, Shiyi Cao, Yuxian Gu, Dacheng Li, Xiuyu Li, Yunhao Fang, Yukang Chen, Cheng-Yu Hsieh, De-An Huang, An-Chieh Cheng, Vishwesh Nath, Jinyi Hu, Sifei Liu, Ranjay Krishna, Daguang Xu, Xiaolong Wang, Pavlo Molchanov, Jan Kautz, Hongxu Yin, Song Han, Yao Lu
-  image: NVILA.png
-  linklist:
-    - url: https://arxiv.org/abs/2412.04468
-      display: Arxiv
-    - url: https://nvlabs.github.io/VILA/
-      display: Project Page
-    - url: https://github.com/NVlabs/VILA
-      display: GitHub
-  highlight: 1
-
 - title: "VILA-HD: Scaling Vision Pre-Training to 4K Resolution"
   description: "We introduce PS3, a framework that scales CLIP-style vision pre-training to 4K resolution with near-constant cost by selectively processing local regions and contrasting them with detailed captions. This enables high-resolution representation learning with greatly reduced computational overhead. The resulting model, VILA-HD, significantly improves high-resolution visual perception compared to baselines without high-resolution vision pre-training, such as AnyRes and S², while using up to 4.3× fewer tokens. VILA-HD outperforms previous multi-modal large language models (MLLMs), including NVILA and Qwen2-VL, across multiple benchmarks. To further evaluate high-resolution perception, we propose 4KPro, a new benchmark of image QA at 4K resolution, on which VILA-HD achieves a 14.5% improvement over GPT-4o and a 3.2% improvement with 2.96× speedup over Qwen2-VL."
   authors: Baifeng Shi, Boyi Li, Han Cai, Yao Lu, Sifei Liu, Marco Pavone, Jan Kautz, Song Han, Trevor Darrell, Pavlo Molchanov, Hongxu Yin
@@ -137,17 +127,24 @@
       display: PubPage
   highlight: 1
 
-- title: "CLIMB: CLustering-based Iterative Data Mixture Bootstrapping"
-  description: "We introduce CLustering-based Iterative Data Mixture Bootstrapping (CLIMB), an automated framework that discovers, evaluates, and refines data mixtures in a pre-training setting. Specifically, CLIMB embeds and clusters large-scale datasets in a semantic space and then iteratively searches for optimal mixtures using a smaller proxy model and a predictor. When continuously trained on 400B tokens with this mixture, our 950M model exceeds the state-of-the-art Llama-3.2-1B by 2.0% averaged across 12 general reasoning tasks. Moreover, we observe that optimizing for a specific domain (e.g., Social Sciences) yields a 5% improvement over random sampling. We introduce ClimbLab, a filtered 1.3-trillion-token corpus with 20 clusters as a research playground, and ClimbMix, a compact yet powerful 400-billion-token dataset designed for efficient pre-training that delivers superior performance under an equal token budget."
-  authors: Shizhe Diao, Yu Yang, Yonggan Fu, Xin Dong, Dan Su, Markus Kliegl, Zijia Chen, Peter Belcak, Yoshi Suhara, Hongxu Yin, Mostofa Patwary, Yingyan (Celine) Lin, Jan Kautz, Pavlo Molchanov
-  image: CLIMB.png
+- title: "FeatSharp: Your Vision Model Features, Sharper"
+  description: The feature maps of vision encoders are fundamental to myriad modern AI tasks, ranging from core perception algorithms (e.g. semantic segmentation, object detection, depth perception, etc.) to modern multimodal understanding in vision-language models (VLMs). Currently, in computer vision, the frontier of general purpose vision backbones are Vision Transformers (ViT), typically trained using contrastive loss (e.g. CLIP). A key problem with most off-the-shelf ViTs, particularly CLIP, is that these models are inflexibly low resolution. Most run at 224x224px, while the "high resolution" versions are around 378-448px, but still inflexible. We introduce a novel method to coherently and cheaply upsample the feature maps of low-res vision encoders while picking up on fine-grained details that would otherwise be lost due to resolution. We demonstrate the effectiveness of this approach on core perception tasks as well as within agglomerative model (RADIO) training as a way of providing richer targets for distillation.
+  authors: Mike Ranzinger, Greg Heinrich, Pavlo Molchanov, Jan Kautz, Bryan Catanzaro, Andrew Tao
+  venue: ICML 2025
+  image: FeatSharp.png
   linklist:
-    - url: https://arxiv.org/abs/2504.13161
+    - url: https://arxiv.org/abs/2502.16025
       display: Arxiv
-    - url: https://huggingface.co/collections/nvidia/climb-datasets-67e428bdb9aaced2acda191f
-      display: HF datasets
-    - url: https://research.nvidia.com/labs/lpr/climb/
-      display: Homepage
+  highlight: 1
+
+- title: "RADIOv2.5: Improved Baselines for Agglomerative Vision Foundation Models"
+  description: "Agglomerative models have recently emerged as a powerful approach to training vision foundation models, leveraging multi-teacher distillation from existing models such as CLIP, DINO, and SAM. This strategy enables the efficient creation of robust models, combining the strengths of individual teachers while significantly reducing computational and resource demands. In this paper, we thoroughly analyze state-of-the-art agglomerative models, identifying critical challenges including resolution mode shifts, teacher imbalance, idiosyncratic teacher artifacts, and an excessive number of output tokens. To address these issues, we propose several novel solutions: multi-resolution training, mosaic augmentation, and improved balancing of teacher loss functions. Specifically, in the context of Vision Language Models, we introduce a token compression technique to maintain high-resolution information within a fixed token count."
+  authors: Greg Heinrich, Mike Ranzinger, Hongxu (Danny)Yin, Yao Lu, Jan Kautz, Andrew Tao, Bryan Catanzaro, Pavlo Molchanov
+  venue: CVPR 2025
+  image: RADIOv2.5.png
+  linklist:
+    - url: https://arxiv.org/abs/2412.07679
+      display: Arxiv
   highlight: 1
 
 - title: "PHI-S: Distribution Balancing for Label-Free Multi-Teacher Distillation"
@@ -158,14 +155,17 @@
     - url: https://arxiv.org/abs/2410.01680
       display: Arxiv
 
-- title: "RADIOv2.5: Improved Baselines for Agglomerative Vision Foundation Models"
-  description: "Agglomerative models have recently emerged as a powerful approach to training vision foundation models, leveraging multi-teacher distillation from existing models such as CLIP, DINO, and SAM. This strategy enables the efficient creation of robust models, combining the strengths of individual teachers while significantly reducing computational and resource demands. In this paper, we thoroughly analyze state-of-the-art agglomerative models, identifying critical challenges including resolution mode shifts, teacher imbalance, idiosyncratic teacher artifacts, and an excessive number of output tokens. To address these issues, we propose several novel solutions: multi-resolution training, mosaic augmentation, and improved balancing of teacher loss functions. Specifically, in the context of Vision Language Models, we introduce a token compression technique to maintain high-resolution information within a fixed token count."
-  authors: Greg Heinrich, Mike Ranzinger, Hongxu (Danny)Yin, Yao Lu, Jan Kautz, Andrew Tao, Bryan Catanzaro, Pavlo Molchanov
-  venue: CVPR 2025
-  image: RADIOv2.5.png
+- title: "NVILA: Efficient Frontier Visual Language Models"
+  description: "We introduce NVILA, a family of open visual language models (VLMs) designed to optimize both efficiency and accuracy. Building upon VILA, NVILA employs a 'scale-then-compress' strategy—first enhancing spatial and temporal resolutions to preserve visual details, then compressing visual tokens to reduce computational overhead. This approach enables NVILA to efficiently process high-resolution images and long videos. Our systematic investigation enhances NVILA's efficiency throughout its lifecycle, from training and fine-tuning to deployment. NVILA matches or surpasses the accuracy of many leading open and proprietary VLMs across a wide range of image and video benchmarks. Simultaneously, it reduces training costs by 4.5×, fine-tuning memory usage by 3.4×, pre-filling latency by 1.6–2.2×, and decoding latency by 1.2–2.8×."
+  authors: Zhijian Liu, Ligeng Zhu, Baifeng Shi, Zhuoyang Zhang, Yuming Lou, Shang Yang, Haocheng Xi, Shiyi Cao, Yuxian Gu, Dacheng Li, Xiuyu Li, Yunhao Fang, Yukang Chen, Cheng-Yu Hsieh, De-An Huang, An-Chieh Cheng, Vishwesh Nath, Jinyi Hu, Sifei Liu, Ranjay Krishna, Daguang Xu, Xiaolong Wang, Pavlo Molchanov, Jan Kautz, Hongxu Yin, Song Han, Yao Lu
+  image: NVILA.png
   linklist:
-    - url: https://arxiv.org/abs/2412.07679
+    - url: https://arxiv.org/abs/2412.04468
       display: Arxiv
+    - url: https://nvlabs.github.io/VILA/
+      display: Project Page
+    - url: https://github.com/NVlabs/VILA
+      display: GitHub
   highlight: 1
 
 - title: "Nemotron-H: A Family of Accurate and Efficient Hybrid Mamba-Transformer Models"
