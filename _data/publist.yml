@@ -27,6 +27,19 @@
       display: Code
   highlight: 1
 
+- title: "Star Elastic: Many-in-One Reasoning LLMs with Efficient Budget Control"
+  description: "Star Elastic is a post-training method that takes an already-trained reasoning LLM and, in a single training job, embeds N nested submodels inside it that share its weights and can be sliced out at deployment with no further training; this yields N-fold compute savings over training each model separately. It also unlocks elastic budget control: because the submodels are nested, inference can use a different submodel for each reasoning phase, rather than allocating constant resources regardless of token difficulty. Applied to the pretrained Nemotron 3 Nano 30B-A3B, it produced a 30B + 23B + 12B nested family with only ~160B tokens; the Elastic-30B variant matches or exceeds the parent on most benchmarks, and hybrid budget control delivers up to 16% higher accuracy and 1.9x faster inference than standard single-model budget control."
+  authors: Ali Taghibakhshi, Ruisi Cai, Saurav Muralidharan, Sharath Turuvekere Sreenivas, Aditya Vavre, Ameya Sunil Mahabaleshwarkar, Bilal Kartal, Sheldon Liang, Marcin Chochowski, Zijia Chen, Akhiad Bercovich, Ran Zilberstein, Ran El-Yaniv, Yonatan Geifman, Daniel Korzekwa, Yoshi Suhara, Oluwatobi Olabiyi, Ashwath Aithal, Nima Tajbakhsh, Pavlo Molchanov
+  venue: ICML 2026
+  image: Star-Elastic.png
+  image_fit: contain
+  linklist:
+    - url: https://arxiv.org/abs/2605.07182
+      display: Arxiv
+    - url: https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-3-Elastic-30B-A3B-FP8
+      display: Models
+  highlight: 1
+
 - title: "OmniVinci: Enhancing Architecture and Data for Omni-Modal Understanding LLM"
   description: "OmniVinci is NVIDIA's first systematic research of new model architecture and data curation for omni-modal LLMs, resulting in a model that achieves state-of-the-art performance in joint perception of images, videos, audio, and text."
   authors: Hanrong Ye, ..., Jan Kautz, Hongxu Yin, Pavlo Molchanov
