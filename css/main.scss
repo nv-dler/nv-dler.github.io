@@ -113,11 +113,7 @@ h1, h2, h3 { line-height: 1.08; letter-spacing: -0.045em; }
 
 .hero-note { padding-top: 18px; border-top: 3px solid var(--green); }
 .note-index { display: block; margin-bottom: 54px; color: #767c78; font-size: 11px; font-weight: 800; letter-spacing: 0.12em; }
-.hero-note > p { margin-bottom: 52px; font-size: 18px; font-weight: 600; line-height: 1.55; letter-spacing: -0.02em; }
-.hero-stats { margin: 0; }
-.hero-stats div { display: flex; align-items: baseline; justify-content: space-between; padding: 13px 0; border-top: 1px solid var(--line); }
-.hero-stats dt { font-size: 23px; font-weight: 700; }
-.hero-stats dd { margin: 0; color: var(--ink-soft); font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.07em; }
+.hero-note > p { margin-bottom: 0; font-size: 18px; font-weight: 600; line-height: 1.55; letter-spacing: -0.02em; }
 
 .split-heading { display: grid; grid-template-columns: 0.85fr 1.15fr; gap: clamp(50px, 10vw, 150px); }
 .split-heading h2, .section-heading h2, .news-heading h2, .join h2 { margin-bottom: 0; font-size: clamp(46px, 6vw, 82px); font-weight: 500; }
