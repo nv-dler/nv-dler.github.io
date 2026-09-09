@@ -17,3 +17,9 @@ These conventions apply to future changes throughout this repository.
 - The intern list is a historical record and should remain intact.
 - Do not deduplicate the intern list against current members or alumni. A former intern may also appear as either a current member or an alumnus.
 - When a current member becomes an alumnus, move their record from the current-member list to the alumni list, but preserve any historical intern entry.
+
+## Research highlights and news
+
+- Keep highlighted publications in reverse chronological order by their first public arXiv submission date, not by the numerical order of their arXiv identifiers.
+- Verify conference venues, presentation types, and awards against official conference records or dated author/project announcements.
+- Add award news separately, but do not duplicate an existing general conference-attendance item.

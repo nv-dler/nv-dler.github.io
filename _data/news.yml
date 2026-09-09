@@ -1,20 +1,41 @@
 - date: July 2026
   headline: Members of our lab are attending ICML'26.
 
+- date: April 2026
+  headline: Members of our team attended ICLR'26 and presented <a href="https://iclr.cc/virtual/2026/poster/10010769">OmniVinci</a>.
+
 - date: December 2025
   headline: Members of our team are attending NeurIPS'25. Come and say hi!
+
+- date: September 2025
+  headline: Congratulations to the <a href="https://neurips.cc/virtual/2025/poster/121568">Nemotron-CLIMB</a> team—the paper was selected as a NeurIPS'25 Spotlight.
+
+- date: July 2025
+  headline: Members of our team attended ICML'25 and presented <a href="https://proceedings.mlr.press/v267/ranzinger25a.html">FeatSharp</a>.
+
+- date: June 2025
+  headline: Members of our team attended CVPR'25 and presented work including <a href="https://openaccess.thecvf.com/content/CVPR2025/html/Heinrich_RADIOv2.5_Improved_Baselines_for_Agglomerative_Vision_Foundation_Models_CVPR_2025_paper.html">RADIOv2.5</a>, <a href="https://openaccess.thecvf.com/content/CVPR2025/html/Liu_NVILA_Efficient_Frontier_Visual_Language_Models_CVPR_2025_paper.html">NVILA</a>, <a href="https://openaccess.thecvf.com/content/CVPR2025/html/Shi_Scaling_Vision_Pre-Training_to_4K_Resolution_CVPR_2025_paper.html">VILA-HD</a>, and <a href="https://cvpr.thecvf.com/virtual/2025/poster/33276">VILA-M3</a>.
 
 - date: May 2025
   headline: Members of our team are attending ICLR'25. We are presenting 5 papers, 1 workshop, and joining a few panel discussions.
 
 - date: April 2025
+  headline: Congratulations to the <a href="https://nvlabs.github.io/PS3/">VILA-HD</a> and <a href="https://cvpr.thecvf.com/virtual/2025/poster/33276">VILA-M3</a> teams—the papers were selected as CVPR'25 Highlights.
+
+- date: April 2025
   headline: 5 of our papers were accepted to CVPR'25.
+
+- date: January 2025
+  headline: Congratulations to the <a href="https://simonxin.com/">Hymba</a> team—the paper was accepted to ICLR'25 as a Spotlight.
 
 - date: January 2025
   headline: Our team's contributions to Llama Nemotron, RADIO, and VILA models were featured in the GTC keynote.
 
 - date: December 2024
   headline: Members of our team are attending NeurIPS'24. We are presenting 3 papers and 1 workshop.
+
+- date: September 2024
+  headline: Congratulations to the <a href="https://neurips.cc/virtual/2024/poster/95573">MaskLLM</a> team—the paper was selected as a NeurIPS'24 Spotlight.
 
 - date: August 2024
   headline: Members of our team are attending ACL'24 and presenting <a href="https://aclanthology.org/2024.acl-short.10.pdf">99% Conditionally Sparse Language Modelling</a>.

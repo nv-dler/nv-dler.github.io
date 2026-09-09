@@ -57,17 +57,6 @@
       display: Models
   highlight: 1
 
-- title: "Minifinetuning: Low-Data Generation Domain Adaptation through Corrective Self-Distillation"
-  description: "Finetuning language models for a new domain inevitably leads to the deterioration of their general performance. This becomes more pronounced the more limited the finetuning data resource.We introduce minifinetuning (MFT), a method for language model domain adaptation that considerably reduces the effects of overfitting-induced degeneralization in low-data settings and which does so in the absence of any pre-training data for replay. MFT demonstrates 2-10x more favourable specialization-to-degeneralization ratios than standard finetuning across a wide range of models and domains and exhibits an intrinsic robustness to overfitting when data in the new domain is scarce and down to as little as 500 samples.Employing corrective self-distillation that is individualized on the sample level, MFT outperforms parameter-efficient finetuning methods, demonstrates replay-like degeneralization mitigation properties, and is composable with either for a combined effect."
-  authors: Peter Belcak, Greg Heinrich, Jan Kautz, Pavlo Molchanov
-  image: mft.png
-  linklist:
-    - url: https://arxiv.org/abs/2506.15702
-      display: Arxiv
-    - url: https://research.nvidia.com/labs/lpr/minifinetuning
-      display: Project Page
-  highlight: 1
-
 - title: "Small Language Models are the Future of Agentic AI"
   description: "Small language models (SLMs) are often overlooked in favor of larger, more powerful models. However, we argue that small LLMs are the future of agentic AI due to their efficiency, accessibility, and adaptability. Here we detail our position on the future of agentic AI, arguing with evidence that that the industry and the community are to benefit from a switch from LLMs to SLMs. Our position is based on three key points: That SLMs are sufficiently powerful, inherently more suitable, and necessarily more economical for many invocations in agentic systems. We then draw a conclusion that they are, to a large extent, the future of agentic AI. We also outline a LLM-to-SLM conversion algorithm that can be employed to produce a SLM for a specific agentic workflow. We welcome correspondence on the topic."
   authors: Peter Belcak, Greg Heinrich, Shizhe Diao, Yonggan Fu, Xin Dong, Saurav Muralidharan, Yingyan Celine Lin, Pavlo Molchanov
@@ -79,9 +68,21 @@
       display: Project/Correspondence Page
   highlight: 1
 
+- title: "Minifinetuning: Low-Data Generation Domain Adaptation through Corrective Self-Distillation"
+  description: "Finetuning language models for a new domain inevitably leads to the deterioration of their general performance. This becomes more pronounced the more limited the finetuning data resource.We introduce minifinetuning (MFT), a method for language model domain adaptation that considerably reduces the effects of overfitting-induced degeneralization in low-data settings and which does so in the absence of any pre-training data for replay. MFT demonstrates 2-10x more favourable specialization-to-degeneralization ratios than standard finetuning across a wide range of models and domains and exhibits an intrinsic robustness to overfitting when data in the new domain is scarce and down to as little as 500 samples.Employing corrective self-distillation that is individualized on the sample level, MFT outperforms parameter-efficient finetuning methods, demonstrates replay-like degeneralization mitigation properties, and is composable with either for a combined effect."
+  authors: Peter Belcak, Greg Heinrich, Jan Kautz, Pavlo Molchanov
+  image: mft.png
+  linklist:
+    - url: https://arxiv.org/abs/2506.15702
+      display: Arxiv
+    - url: https://research.nvidia.com/labs/lpr/minifinetuning
+      display: Project Page
+  highlight: 1
+
 - title: "CLIMB: CLustering-based Iterative Data Mixture Bootstrapping"
   description: "We introduce CLustering-based Iterative Data Mixture Bootstrapping (CLIMB), an automated framework that discovers, evaluates, and refines data mixtures in a pre-training setting. Specifically, CLIMB embeds and clusters large-scale datasets in a semantic space and then iteratively searches for optimal mixtures using a smaller proxy model and a predictor. When continuously trained on 400B tokens with this mixture, our 950M model exceeds the state-of-the-art Llama-3.2-1B by 2.0% averaged across 12 general reasoning tasks. Moreover, we observe that optimizing for a specific domain (e.g., Social Sciences) yields a 5% improvement over random sampling. We introduce ClimbLab, a filtered 1.3-trillion-token corpus with 20 clusters as a research playground, and ClimbMix, a compact yet powerful 400-billion-token dataset designed for efficient pre-training that delivers superior performance under an equal token budget."
   authors: Shizhe Diao, Yu Yang, Yonggan Fu, Xin Dong, Dan Su, Markus Kliegl, Zijia Chen, Peter Belcak, Yoshi Suhara, Hongxu Yin, Mostofa Patwary, Yingyan (Celine) Lin, Jan Kautz, Pavlo Molchanov
+  venue: NeurIPS 2025 (spotlight)
   image: CLIMB.png
   linklist:
     - url: https://arxiv.org/abs/2504.13161
@@ -95,6 +96,7 @@
 - title: "VILA-M3: Enhancing Vision-Language Models with Medical Expert Knowledge"
   description: "We introduce VILA-M3, a framework that enhances generalist vision-language models (VLMs) with domain-specific medical expertise. VILA-M3 integrates outputs from expert models—such as those trained for tumor detection and abnormality classification—into the instruction fine-tuning process. This approach enables the model to capture fine-grained features in medical data, particularly in radiology, that are often too intricate for standard VLMs. Our experiments demonstrate that VILA-M3 achieves state-of-the-art performance, with an average improvement of ~9% over the prior SOTA model Med-Gemini and ~6% over models trained on specific tasks. This work underscores the importance of incorporating domain expertise to create precise, reliable VLMs for medical applications."
   authors: Vishwesh Nath, Wenqi Li, Dong Yang, Andriy Myronenko, Mingxin Zheng, Yao Lu, Zhijian Liu, Hongxu Yin, Yee Man Law, Yucheng Tang, Pengfei Guo, Can Zhao, Ziyue Xu, Yufan He, Greg Heinrich, Stephen Aylward, Marc Edgar, Michael Zephyr, Pavlo Molchanov, Baris Turkbey, Holger Roth, Daguang Xu
+  venue: CVPR 2025 (highlight)
   image: VILA-M3.png
   linklist:
     - url: https://arxiv.org/abs/2411.12915
@@ -119,6 +121,7 @@
 - title: "VILA-HD: Scaling Vision Pre-Training to 4K Resolution"
   description: "We introduce PS3, a framework that scales CLIP-style vision pre-training to 4K resolution with near-constant cost by selectively processing local regions and contrasting them with detailed captions. This enables high-resolution representation learning with greatly reduced computational overhead. The resulting model, VILA-HD, significantly improves high-resolution visual perception compared to baselines without high-resolution vision pre-training, such as AnyRes and S², while using up to 4.3× fewer tokens. VILA-HD outperforms previous multi-modal large language models (MLLMs), including NVILA and Qwen2-VL, across multiple benchmarks. To further evaluate high-resolution perception, we propose 4KPro, a new benchmark of image QA at 4K resolution, on which VILA-HD achieves a 14.5% improvement over GPT-4o and a 3.2% improvement with 2.96× speedup over Qwen2-VL."
   authors: Baifeng Shi, Boyi Li, Han Cai, Yao Lu, Sifei Liu, Marco Pavone, Jan Kautz, Song Han, Trevor Darrell, Pavlo Molchanov, Hongxu Yin
+  venue: CVPR 2025 (highlight)
   image: VILA-HD.png
   linklist:
     - url: https://arxiv.org/abs/2503.19903
@@ -158,6 +161,7 @@
 - title: "NVILA: Efficient Frontier Visual Language Models"
   description: "We introduce NVILA, a family of open visual language models (VLMs) designed to optimize both efficiency and accuracy. Building upon VILA, NVILA employs a 'scale-then-compress' strategy—first enhancing spatial and temporal resolutions to preserve visual details, then compressing visual tokens to reduce computational overhead. This approach enables NVILA to efficiently process high-resolution images and long videos. Our systematic investigation enhances NVILA's efficiency throughout its lifecycle, from training and fine-tuning to deployment. NVILA matches or surpasses the accuracy of many leading open and proprietary VLMs across a wide range of image and video benchmarks. Simultaneously, it reduces training costs by 4.5×, fine-tuning memory usage by 3.4×, pre-filling latency by 1.6–2.2×, and decoding latency by 1.2–2.8×."
   authors: Zhijian Liu, Ligeng Zhu, Baifeng Shi, Zhuoyang Zhang, Yuming Lou, Shang Yang, Haocheng Xi, Shiyi Cao, Yuxian Gu, Dacheng Li, Xiuyu Li, Yunhao Fang, Yukang Chen, Cheng-Yu Hsieh, De-An Huang, An-Chieh Cheng, Vishwesh Nath, Jinyi Hu, Sifei Liu, Ranjay Krishna, Daguang Xu, Xiaolong Wang, Pavlo Molchanov, Jan Kautz, Hongxu Yin, Song Han, Yao Lu
+  venue: CVPR 2025
   image: NVILA.png
   linklist:
     - url: https://arxiv.org/abs/2412.04468
@@ -243,6 +247,7 @@
   image: minitron.png
   description: We develop an efficient model compression strategy for LLMs that combines depth, width, attention and MLP pruning with knowledge-distillation-based retraining. We use our strategy to compress the Nemotron-4 family of LLMs by a factor of 2-4x, and compare their performance to similarly-sized models on a variety of language modeling tasks. Deriving 8B and 4B models from an already pretrained 15B model using our approach requires up to 40x fewer training tokens per model compared to training from scratch; this results in compute cost savings of 1.8x for training the full model family (15B, 8B, and 4B).
   authors: Saurav Muralidharan, Sharath Turuvekere Sreenivas, Raviraj Joshi, Marcin Chochowski, Mostofa Patwary, Mohammad Shoeybi, Bryan Catanzaro, Jan Kautz, Pavlo Molchanov
+  venue: NeurIPS 2024
   linklist:
     - url: https://arxiv.org/abs/2407.14679
       display: Arxiv
