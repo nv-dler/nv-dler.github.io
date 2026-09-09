@@ -57,17 +57,6 @@
       display: Models
   highlight: 1
 
-- title: "Small Language Models are the Future of Agentic AI"
-  description: "Small language models (SLMs) are often overlooked in favor of larger, more powerful models. However, we argue that small LLMs are the future of agentic AI due to their efficiency, accessibility, and adaptability. Here we detail our position on the future of agentic AI, arguing with evidence that that the industry and the community are to benefit from a switch from LLMs to SLMs. Our position is based on three key points: That SLMs are sufficiently powerful, inherently more suitable, and necessarily more economical for many invocations in agentic systems. We then draw a conclusion that they are, to a large extent, the future of agentic AI. We also outline a LLM-to-SLM conversion algorithm that can be employed to produce a SLM for a specific agentic workflow. We welcome correspondence on the topic."
-  authors: Peter Belcak, Greg Heinrich, Shizhe Diao, Yonggan Fu, Xin Dong, Saurav Muralidharan, Yingyan Celine Lin, Pavlo Molchanov
-  image: slm_agents2.png
-  linklist:
-    - url: https://arxiv.org/abs/2506.02153
-      display: Arxiv
-    - url: https://research.nvidia.com/labs/lpr/slm-agents/
-      display: Project/Correspondence Page
-  highlight: 1
-
 - title: "Minifinetuning: Low-Data Generation Domain Adaptation through Corrective Self-Distillation"
   description: "Finetuning language models for a new domain inevitably leads to the deterioration of their general performance. This becomes more pronounced the more limited the finetuning data resource.We introduce minifinetuning (MFT), a method for language model domain adaptation that considerably reduces the effects of overfitting-induced degeneralization in low-data settings and which does so in the absence of any pre-training data for replay. MFT demonstrates 2-10x more favourable specialization-to-degeneralization ratios than standard finetuning across a wide range of models and domains and exhibits an intrinsic robustness to overfitting when data in the new domain is scarce and down to as little as 500 samples.Employing corrective self-distillation that is individualized on the sample level, MFT outperforms parameter-efficient finetuning methods, demonstrates replay-like degeneralization mitigation properties, and is composable with either for a combined effect."
   authors: Peter Belcak, Greg Heinrich, Jan Kautz, Pavlo Molchanov
@@ -77,6 +66,17 @@
       display: Arxiv
     - url: https://research.nvidia.com/labs/lpr/minifinetuning
       display: Project Page
+  highlight: 1
+
+- title: "Small Language Models are the Future of Agentic AI"
+  description: "Small language models (SLMs) are often overlooked in favor of larger, more powerful models. However, we argue that small LLMs are the future of agentic AI due to their efficiency, accessibility, and adaptability. Here we detail our position on the future of agentic AI, arguing with evidence that that the industry and the community are to benefit from a switch from LLMs to SLMs. Our position is based on three key points: That SLMs are sufficiently powerful, inherently more suitable, and necessarily more economical for many invocations in agentic systems. We then draw a conclusion that they are, to a large extent, the future of agentic AI. We also outline a LLM-to-SLM conversion algorithm that can be employed to produce a SLM for a specific agentic workflow. We welcome correspondence on the topic."
+  authors: Peter Belcak, Greg Heinrich, Shizhe Diao, Yonggan Fu, Xin Dong, Saurav Muralidharan, Yingyan Celine Lin, Pavlo Molchanov
+  image: slm_agents2.png
+  linklist:
+    - url: https://arxiv.org/abs/2506.02153
+      display: Arxiv
+    - url: https://research.nvidia.com/labs/lpr/slm-agents/
+      display: Project/Correspondence Page
   highlight: 1
 
 - title: "CLIMB: CLustering-based Iterative Data Mixture Bootstrapping"
@@ -182,13 +182,6 @@
     - url: https://arxiv.org/abs/2410.21271
       display: Arxiv
 
-- title: "MaskLLM: Learnable Semi-Structured Sparsity for Large Language Models"
-  description: "Large Language Models (LLMs) are distinguished by their massive parameter counts, which typically result in significant redundancy. This work introduces MaskLLM, a learnable pruning method that establishes Semi-structured (or ``N:M'') Sparsity in LLMs, aimed at reducing computational overhead during inference. Instead of developing a new importance criterion, MaskLLM explicitly models N:M patterns as a learnable distribution through Gumbel Softmax sampling. This approach facilitates end-to-end training on large-scale datasets and offers two notable advantages: 1) High-quality Masks - our method effectively scales to large datasets and learns accurate masks; 2) Transferability - the probabilistic modeling of mask distribution enables the transfer learning of sparsity across domains or tasks. We assessed MaskLLM using 2:4 sparsity on various LLMs, including LLaMA-2, Nemotron-4, and GPT-3, with sizes ranging from 843M to 15B parameters, and our empirical results show substantial improvements over state-of-the-art methods. For instance, leading approaches achieve a perplexity (PPL) of 10 or greater on Wikitext compared to the dense model's 5.12 PPL, but MaskLLM achieves a significantly lower 6.72 PPL solely by learning the masks with frozen weights. Furthermore, MaskLLM's learnable nature allows customized masks for lossless application of 2:4 sparsity to downstream tasks or domains."
-  authors: Gongfan Fang, Hongxu Yin, Saurav Muralidharan, Greg Heinrich, Jeff Pool, Jan Kautz, Pavlo Molchanov, Xinchao Wang
-  linklist:
-    - url: https://arxiv.org/abs/2409.17481
-      display: Arxiv
-
 - title: "Efficient Hybrid Language Model Compression through Group-Aware SSM Pruning"
   description: Hybrid LLM architectures that combine Attention and State Space Models (SSMs) achieve state-of-the-art accuracy and runtime performance. Recent work has demonstrated that applying compression and distillation to Attention-only models yields smaller, more accurate models at a fraction of the training cost. In this work, we explore the effectiveness of compressing Hybrid architectures. We introduce a novel group-aware pruning strategy that preserves the structural integrity of SSM blocks and their sequence modeling capabilities. Furthermore, we demonstrate the necessity of such SSM pruning to achieve improved accuracy and inference speed compared to traditional approaches. Our compression recipe combines SSM, FFN, embedding dimension, and layer pruning, followed by knowledge distillation-based retraining, similar to the MINITRON technique. Using this approach, we compress the Nemotron-H 8B Hybrid model down to 4B parameters with up to 40x fewer training tokens. The resulting model surpasses the accuracy of similarly-sized models while achieving 2x faster inference, significantly advancing the Pareto frontier.
   authors: Ali Taghibakhshi, Sharath Turuvekere Sreenivas, Saurav Muralidharan, Marcin Chochowski, Yashaswi Karnati, Raviraj Joshi, Ameya Sunil Mahabaleshwarkar, Zijia Chen, Yoshi Suhara, Oluwatobi Olabiyi, Daniel Korzekwa, Mostofa Patwary, Mohammad Shoeybi, Jan Kautz, Bryan Catanzaro, Ashwath Aithal, Nima Tajbakhsh, Pavlo Molchanov
@@ -231,6 +224,19 @@
       display: HF models
     - url: https://developer.nvidia.com/blog/hymba-hybrid-head-architecture-boosts-small-language-model-performance/
       display: Blog
+  highlight: 1
+
+- title: "MaskLLM: Learnable Semi-Structured Sparsity for Large Language Models"
+  description: "MaskLLM learns 2:4 semi-structured sparsity end to end by modeling pruning masks as differentiable distributions while keeping model weights frozen. Across LLaMA-2, Nemotron-4, and GPT-3 models from 843M to 15B parameters, it preserves substantially more accuracy than prior pruning methods and supports transferable, task-specific masks for efficient inference."
+  authors: Gongfan Fang, Hongxu Yin, Saurav Muralidharan, Greg Heinrich, Jeff Pool, Jan Kautz, Pavlo Molchanov, Xinchao Wang
+  venue: NeurIPS 2024 (spotlight)
+  image: MaskLLM.png
+  image_fit: contain
+  linklist:
+    - url: https://arxiv.org/abs/2409.17481
+      display: Arxiv
+    - url: https://github.com/NVlabs/MaskLLM
+      display: Code
   highlight: 1
 
 - title: "Compact Language Models via Pruning and Knowledge Distillation"
