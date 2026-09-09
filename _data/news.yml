@@ -8,7 +8,7 @@
   headline: Members of our team are attending NeurIPS'25. Come and say hi!
 
 - date: September 2025
-  headline: Congratulations to the <a href="https://neurips.cc/virtual/2025/poster/121568">Nemotron-CLIMB</a> team—the paper was selected as a NeurIPS'25 Spotlight.
+  headline: Congratulations to the <a href="https://neurips.cc/virtual/2025/poster/121568">Nemotron-CLIMB</a> team. The paper was selected as a NeurIPS'25 Spotlight.
 
 - date: July 2025
   headline: Members of our team attended ICML'25 and presented <a href="https://proceedings.mlr.press/v267/ranzinger25a.html">FeatSharp</a>.
@@ -20,13 +20,13 @@
   headline: Members of our team are attending ICLR'25. We are presenting 5 papers, 1 workshop, and joining a few panel discussions.
 
 - date: April 2025
-  headline: Congratulations to the <a href="https://nvlabs.github.io/PS3/">VILA-HD</a> and <a href="https://cvpr.thecvf.com/virtual/2025/poster/33276">VILA-M3</a> teams—the papers were selected as CVPR'25 Highlights.
+  headline: Congratulations to the <a href="https://nvlabs.github.io/PS3/">VILA-HD</a> and <a href="https://cvpr.thecvf.com/virtual/2025/poster/33276">VILA-M3</a> teams. The papers were selected as CVPR'25 Highlights.
 
 - date: April 2025
   headline: 5 of our papers were accepted to CVPR'25.
 
 - date: January 2025
-  headline: Congratulations to the <a href="https://simonxin.com/">Hymba</a> team—the paper was accepted to ICLR'25 as a Spotlight.
+  headline: Congratulations to the <a href="https://simonxin.com/">Hymba</a> team. The paper was accepted to ICLR'25 as a Spotlight.
 
 - date: January 2025
   headline: Our team's contributions to Llama Nemotron, RADIO, and VILA models were featured in the GTC keynote.
@@ -35,7 +35,7 @@
   headline: Members of our team are attending NeurIPS'24. We are presenting 3 papers and 1 workshop.
 
 - date: September 2024
-  headline: Congratulations to the <a href="https://neurips.cc/virtual/2024/poster/95573">MaskLLM</a> team—the paper was selected as a NeurIPS'24 Spotlight.
+  headline: Congratulations to the <a href="https://neurips.cc/virtual/2024/poster/95573">MaskLLM</a> team. The paper was selected as a NeurIPS'24 Spotlight.
 
 - date: August 2024
   headline: Members of our team are attending ACL'24 and presenting <a href="https://aclanthology.org/2024.acl-short.10.pdf">99% Conditionally Sparse Language Modelling</a>.

@@ -6,7 +6,7 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: NVIDIA DLER — Deep Learning Efficiency Research
+title: "NVIDIA DLER: Deep Learning Efficiency Research"
 email: dler@nvidia.com
 description: >
   NVIDIA Deep Learning Efficiency Research advances efficient AI architectures, model optimization, multimodal systems, and reliable agents.
