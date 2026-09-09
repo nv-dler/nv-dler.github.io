@@ -38,29 +38,29 @@ permalink: /
 <section id="research" class="research section-pad section-tint" aria-labelledby="research-title">
   <div class="shell">
     <div class="section-heading">
-      <p class="section-kicker">Research</p>
-      <h2 id="research-title">Four ways we make<br>AI work better.</h2>
+      <p class="section-kicker">Research interests</p>
+      <h2 id="research-title">Four foci of<br>our research.</h2>
     </div>
     <ol class="research-list">
       <li>
         <span class="research-number">01</span>
-        <div><h3>Efficient architectures</h3><p>Novel model designs that improve the capability-to-compute ratio, from hybrid language models to flexible networks.</p></div>
+        <div><h3>Efficient architectures and models</h3><p>Novel model designs that improve the capability-to-compute ratio, from hybrid language models to flexible networks. Compression, sparsity, quantization, distillation, and neural architecture search for practical, efficient deployment.</p></div>
         <span class="research-tag">Models</span>
       </li>
       <li>
         <span class="research-number">02</span>
-        <div><h3>Post-training optimization</h3><p>Compression, sparsity, quantization, distillation, and neural architecture search for practical deployment.</p></div>
-        <span class="research-tag">Systems</span>
-      </li>
-      <li>
-        <span class="research-number">03</span>
-        <div><h3>Universal representations</h3><p>Powerful and efficient representations of images, video, language, and the connections between them.</p></div>
+        <div><h3>Multimodal representations</h3><p>Powerful and efficient representations of images, video, language, and the connections between them.</p></div>
         <span class="research-tag">Multimodal</span>
       </li>
       <li>
-        <span class="research-number">04</span>
-        <div><h3>Reliable agentic systems</h3><p>Efficient, dependable language and multimodal model applications for assistants, robotics, and autonomous driving.</p></div>
+        <span class="research-number">03</span>
+        <div><h3>Efficient, reliable agentic systems</h3><p>Efficient, dependable language and multimodal model applications for assistants, robotics, and autonomous driving.</p></div>
         <span class="research-tag">Agents</span>
+      </li>
+      <li>
+        <span class="research-number">04</span>
+        <div><h3>Local frontier intelligence</h3><p>AI systems that perform at the frontier level while running locally on personal devices.</p></div>
+        <span class="research-tag">Systems</span>
       </li>
     </ol>
   </div>
@@ -70,10 +70,10 @@ permalink: /
   <div class="shell">
     <div class="section-heading heading-row">
       <div>
-        <p class="section-kicker">Selected work</p>
+        <p class="section-kicker">Selected publications</p>
         <h2 id="publications-title">Research highlights.</h2>
       </div>
-      <p class="heading-aside">Open research spanning efficient language models, visual intelligence, multimodal systems, and model compression.</p>
+      <p class="heading-aside">Open research, published for the benefit of the scientific community.</p>
     </div>
     <div class="featured-grid">
       {% for publication in site.data.publist %}
@@ -96,47 +96,16 @@ permalink: /
       {% endfor %}
     </div>
 
-    <div class="archive" aria-labelledby="archive-title">
-      <div class="archive-heading">
-        <p class="section-kicker">Research index</p>
-        <h3 id="archive-title">More publications</h3>
-        <p>Expand any paper to read its abstract and access the publication.</p>
-      </div>
-      <div class="archive-list">
-        {% assign archive_index = 0 %}
-        {% for publication in site.data.publist %}
-        {% unless publication.highlight == 1 %}
-        {% assign archive_index = archive_index | plus: 1 %}
-        <details class="archive-item">
-          <summary>
-            <span class="archive-number">{{ archive_index | prepend: '0' | slice: -2, 2 }}</span>
-            <span class="archive-title">{{ publication.title }}</span>
-            <span class="archive-toggle" aria-hidden="true"></span>
-          </summary>
-          <div class="archive-content">
-            <p class="authors">{{ publication.authors }}</p>
-            {% if publication.venue %}<p class="archive-venue">{{ publication.venue }}</p>{% endif %}
-            <p>{{ publication.description }}</p>
-            <div class="publication-links">
-              {% for link in publication.linklist %}<a href="{{ link.url }}">{{ link.display }} <span aria-hidden="true">↗</span></a>{% endfor %}
-            </div>
-          </div>
-        </details>
-        {% endunless %}
-        {% endfor %}
-      </div>
-    </div>
   </div>
 </section>
 
 <section id="team" class="team section-pad section-dark" aria-labelledby="team-title">
   <div class="shell">
-    <div class="section-heading heading-row">
+    <div class="section-heading">
       <div>
         <p class="section-kicker">People</p>
         <h2 id="team-title">The DLER team.</h2>
       </div>
-      <p class="heading-aside">A focused group working across model efficiency, visual intelligence, data, and dependable AI systems.</p>
     </div>
     <div class="team-grid">
       {% for member in site.data.members %}
@@ -155,14 +124,26 @@ permalink: /
       {% endfor %}
     </div>
 
-    <div class="interns">
+    <div class="people-list">
       <div>
-        <p class="section-kicker">Collaborators</p>
+        <p class="section-kicker">Alumni</p>
+        <h3>Former team members</h3>
+      </div>
+      <ul>
+        {% for member in site.data.alumni %}
+        <li><a class="people-list-row" href="{{ member.webpage }}"><strong>{{ member.name }}</strong><span>{{ member.info }}</span><i aria-hidden="true">↗</i></a></li>
+        {% endfor %}
+      </ul>
+    </div>
+
+    <div class="people-list people-list-followup">
+      <div>
+        <p class="section-kicker">Interns</p>
         <h3>Past &amp; present interns</h3>
       </div>
       <ul>
         {% for member in site.data.interns %}
-        <li><a href="{{ member.webpage }}"><strong>{{ member.name }}</strong><span>{{ member.info }}</span><i aria-hidden="true">↗</i></a></li>
+        <li><a class="people-list-row" href="{{ member.webpage }}"><strong>{{ member.name }}</strong><span>{{ member.info }}</span><i aria-hidden="true">↗</i></a></li>
         {% endfor %}
       </ul>
     </div>

@@ -5,20 +5,6 @@
   webpage: https://www.pmolchanov.com/
   scholar: https://scholar.google.com/citations?user=J9PoyoIAAAAJ&hl=en&oi=ao
 
-- name: Yingyan (Celine) Lin
-  photo: Celine.png
-  info: Visiting Professor.
-  email: sdiao@nvidia.com
-  webpage: https://eiclab.scs.gatech.edu/pages/team.html
-  scholar: https://scholar.google.com/citations?user=dio8IesAAAAJ&hl=en&oi=ao
-
-- name: Hongxu (Danny) Yin
-  photo: Danny.png
-  info: Vision-language models.
-  email: dannyy@nvidia.com
-  webpage: https://hongxu-yin.github.io/
-  scholar: https://scholar.google.com/citations?user=4gdSoOYAAAAJ&hl=en&oi=ao
-
 - name: Saurav Muralidharan
   photo: Saurav.jpg
   info: Efficient language models.
@@ -32,13 +18,6 @@
   email: gheinrich@nvidia.com
   scholar: https://scholar.google.com/citations?hl=fr&user=VrjibvwAAAAJ
 
-- name: Xin Dong
-  photo: Xin.jpg
-  info: On-device language models
-  email: xind@nvidia.com
-  webpage: https://simonxin.com/
-  scholar: https://scholar.google.com/citations?user=O8nBN64AAAAJ&hl=en
-
 - name: Peter Belcak
   photo: Peter.png
   info: Reliable and efficient agentic systems.
@@ -46,16 +25,37 @@
   webpage: https://pbelcak.com/
   scholar: https://scholar.google.com/citations?user=8EQ-RvEAAAAJ
 
-- name: Shizhe Diao
-  photo: Shizhe.png
-  info: Data quality and data efficiency.
-  email: sdiao@nvidia.com
-  webpage: https://shizhediao.github.io/
-  scholar: https://scholar.google.com/citations?user=NDFQrLQAAAAJ&hl=en
-
 - name: Yonggan Fu
   photo: Yonggan.jpg
   info: Efficient language models.
-  email: yonggan.gatech@gmail.com
+  email: yongganf@nvidia.com
   webpage: https://www.yongganfu.com/
   scholar: https://scholar.google.com/citations?hl=en?authuser%3D1?authuser%3D1&pli=1&authuser=1&user=pt3GfXcAAAAJ
+
+- name: Jindong Jiang
+  photo: Jindong.png
+  info: Agentic AI and efficient language and vision-language models.
+  email: jindongj@nvidia.com
+  webpage: https://www.jindongjiang.me/
+  scholar: https://scholar.google.com/citations?user=6oo8xOQAAAAJ&hl=en&sortby=pubdate
+
+- name: Gongfan Fang
+  photo: Gongfan.jpg
+  info: Efficient deep learning and language models.
+  email: gongfanf@nvidia.com
+  webpage: https://fangggf.github.io/
+  scholar: https://scholar.google.com/citations?user=489YZ_kAAAAJ
+
+- name: Hanrong Ye
+  photo: Hanrong.jpg
+  info: Multimodal models for understanding and generation.
+  email: hanrongy@nvidia.com
+  webpage: https://sites.google.com/site/yhrspace/
+  scholar: https://scholar.google.com/citations?user=1XbRknQAAAAJ&hl=en
+
+- name: Shih-Yang Liu
+  photo: Shih-Yang.png
+  info: Efficient deep learning and reinforcement learning for LLM reasoning.
+  email: shihyangl@nvidia.com
+  webpage: https://nbasyl.github.io/
+  scholar: https://scholar.google.com/citations?user=eBXRoDgAAAAJ&hl=en
