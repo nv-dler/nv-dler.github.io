@@ -13,6 +13,7 @@ These conventions apply to future changes throughout this repository.
 ## Membership records
 
 - Current members and alumni are mutually exclusive: a person must appear in only one of those two lists, according to their current status.
+- List alumni in reverse chronological order, with the most recent former team members first.
 - The intern list is a historical record and should remain intact.
 - Do not deduplicate the intern list against current members or alumni. A former intern may also appear as either a current member or an alumnus.
 - When a current member becomes an alumnus, move their record from the current-member list to the alumni list, but preserve any historical intern entry.
