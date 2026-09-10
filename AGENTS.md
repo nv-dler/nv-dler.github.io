@@ -2,6 +2,11 @@
 
 These conventions apply to future changes throughout this repository.
 
+## Copy style
+
+- Do not use em dashes in website copy or generated presentation styles.
+- Rewrite affected sentences using commas, colons, semicolons, parentheses, or sentence breaks instead.
+
 ## Team photos
 
 - Keep the original image for every team member in `images/teampic/`.
