@@ -1,3 +1,18 @@
+- title: "Nemotron-Labs-Diffusion: A Tri-Mode Language Model Unifying Autoregressive, Diffusion, and Self-Speculation Decoding"
+  description: "Nemotron-Labs-Diffusion unifies autoregressive, diffusion, and self-speculation decoding within a single language model trained with a joint AR-diffusion objective. The resulting 3B, 8B, and 14B model family can switch decoding modes across deployment settings, delivering strong efficiency across different serving concurrency levels and outperforming existing multi-token prediction methods. By combining the accuracy of autoregressive generation with diffusion-based parallelism, Nemotron-Labs-Diffusion-8B achieves 4x higher throughput than Qwen3-8B on SPEED-Bench using SGLang on an NVIDIA GB200 GPU."
+  authors: Yonggan Fu, Lexington Whalen, Abhinav Garg, Chengyue Wu, Maksim Khadkevich, Nicolai Oswald, Enze Xie, Daniel Egert, Sharath Turuvekere Sreenivas, Shizhe Diao, Chenhan Yu, Ye Yu, Weijia Chen, Sajad Norouzi, Jingyu Liu, Shiyi Lan, Ligeng Zhu, Jin Wang, Jindong Jiang, Morteza Mardani, Mehran Maghoumi, Song Han, Ante Jukić, Nima Tajbakhsh, Jan Kautz, Pavlo Molchanov
+  venue: EMNLP 2026
+  image: nemotron_labs_diffusion.webp
+  image_fit: contain
+  linklist:
+    - url: https://arxiv.org/abs/2607.05722
+      display: Arxiv
+    - url: https://huggingface.co/collections/nvidia/nemotron-labs-diffusion
+      display: Models
+    - url: https://research.nvidia.com/publication/2026-05_nemotron-labs-diffusion-tri-mode-language-model-unifying-autoregressive
+      display: Project Page
+  highlight: 1
+
 - title: "RADIO1D: Elastic Representations for Condensed Vision Modeling"
   description: "RADIO1D compresses images into a compact, variable-length 1D token sequence, enabling accurate scene understanding with as little as one token and flexible accuracy-efficiency tradeoffs for vision-language models."
   authors: Greg Heinrich, Mike Ranzinger, Collin McCarthy, Natan Bagrov, Eugene Khvedchenya, Bryan Catanzaro, Jan Kautz, Andrew Tao, Pavlo Molchanov
@@ -40,23 +55,6 @@
       display: Models
   highlight: 1
 
-- title: "OmniVinci: Enhancing Architecture and Data for Omni-Modal Understanding LLM"
-  description: "OmniVinci is NVIDIA's first systematic research of new model architecture and data curation for omni-modal LLMs, resulting in a model that achieves state-of-the-art performance in joint perception of images, videos, audio, and text."
-  authors: Hanrong Ye, ..., Jan Kautz, Hongxu Yin, Pavlo Molchanov
-  venue: ICLR 2026
-  image: OmniVinci.png
-  image_fit: contain
-  linklist:
-    - url: https://arxiv.org/abs/2510.15870
-      display: Arxiv
-    - url: https://nvlabs.github.io/OmniVinci/
-      display: Project Page
-    - url: https://github.com/NVlabs/OmniVinci
-      display: Code
-    - url: https://huggingface.co/nvidia/omnivinci
-      display: Models
-  highlight: 1
-
 - title: "GDPO: Group reward-Decoupled Normalization Policy Optimization for Multi-reward RL Optimization"
   description: "GDPO improves GRPO for reinforcement learning with multiple rewards by normalizing each reward separately before combining them. This preserves distinctions that GRPO can collapse when it sums rewards first, while final batch normalization supports stable optimization across correctness, formatting, length, and other objectives."
   authors: Shih-Yang Liu, Xin Dong, Ximing Lu, Shizhe Diao, Peter Belcak, Mingjie Liu, Min-Hung Chen, Hongxu Yin, Yu-Chiang Frank Wang, Kwang-Ting Cheng, Yejin Choi, Jan Kautz, Pavlo Molchanov
@@ -74,15 +72,47 @@
       display: Hugging Face
   highlight: 1
 
-- title: "Small Language Models are the Future of Agentic AI"
-  description: "Small language models (SLMs) are often overlooked in favor of larger, more powerful models. However, we argue that small LLMs are the future of agentic AI due to their efficiency, accessibility, and adaptability. Here we detail our position on the future of agentic AI, arguing with evidence that that the industry and the community are to benefit from a switch from LLMs to SLMs. Our position is based on three key points: That SLMs are sufficiently powerful, inherently more suitable, and necessarily more economical for many invocations in agentic systems. We then draw a conclusion that they are, to a large extent, the future of agentic AI. We also outline a LLM-to-SLM conversion algorithm that can be employed to produce a SLM for a specific agentic workflow. We welcome correspondence on the topic."
-  authors: Peter Belcak, Greg Heinrich, Shizhe Diao, Yonggan Fu, Xin Dong, Saurav Muralidharan, Yingyan Celine Lin, Pavlo Molchanov
-  image: slm_agents2.png
+- title: "Efficient-DLM: From Autoregressive to Diffusion Language Models, and Beyond in Speed"
+  description: "Efficient-DLM converts pretrained autoregressive language models into diffusion language models that preserve strong task accuracy while enabling parallel generation. It introduces a continuous pretraining scheme with block-wise attention that remains causal across blocks while enabling bidirectional modeling within each block, together with position-dependent token masking to better align training with diffusion decoding. The resulting 4B and 8B model family advances both accuracy and efficiency, with Efficient-DLM-8B achieving +5.4%/+2.7% higher accuracy and 4.5x/2.7x higher throughput than Dream-7B and Qwen3-4B, respectively."
+  authors: Yonggan Fu, Lexington Whalen, Zhifan Ye, Xin Dong, Shizhe Diao, Jingyu Liu, Chengyue Wu, Hao Zhang, Enze Xie, Song Han, Maksim Khadkevich, Jan Kautz, Yingyan Celine Lin, Pavlo Molchanov
+  venue: ICML 2026
+  image: efficient_dlm.png
+  image_fit: contain
   linklist:
-    - url: https://arxiv.org/abs/2506.02153
+    - url: https://arxiv.org/abs/2512.14067
       display: Arxiv
-    - url: https://research.nvidia.com/labs/lpr/slm-agents/
-      display: Project/Correspondence Page
+    - url: https://huggingface.co/collections/nvidia/efficient-dlm
+      display: Models
+  highlight: 1
+
+- title: "Nemotron-Flash: Towards Latency-Optimal Hybrid Small Language Models"
+  description: "Nemotron-Flash rethinks small language model design around real-device latency rather than parameter count. It identifies depth-width ratios and operator choices as key determinants of inference efficiency, combining latency-optimal depth-width design, evolutionary search over hybrid operators, and training-time weight normalization. The resulting 1B and 3B model family advances the accuracy-efficiency frontier across both low-latency and high-throughput serving."
+  authors: Yonggan Fu, Xin Dong, Shizhe Diao, Matthijs Van Keirsbilck, Hanrong Ye, Wonmin Byeon, Yashaswi Karnati, Lucas Liebenwein, Hannah Zhang, Nikolaus Binder, Maksim Khadkevich, Alexander Keller, Jan Kautz, Yingyan Celine Lin, Pavlo Molchanov
+  venue: NeurIPS 2025
+  image: nemotron_flash.webp
+  image_fit: contain
+  linklist:
+    - url: https://arxiv.org/abs/2511.18890
+      display: Arxiv
+    - url: https://huggingface.co/collections/nvidia/nemotron-flash
+      display: Models
+  highlight: 1
+
+- title: "OmniVinci: Enhancing Architecture and Data for Omni-Modal Understanding LLM"
+  description: "OmniVinci is NVIDIA's first systematic research of new model architecture and data curation for omni-modal LLMs, resulting in a model that achieves state-of-the-art performance in joint perception of images, videos, audio, and text."
+  authors: Hanrong Ye, ..., Jan Kautz, Hongxu Yin, Pavlo Molchanov
+  venue: ICLR 2026
+  image: OmniVinci.png
+  image_fit: contain
+  linklist:
+    - url: https://arxiv.org/abs/2510.15870
+      display: Arxiv
+    - url: https://nvlabs.github.io/OmniVinci/
+      display: Project Page
+    - url: https://github.com/NVlabs/OmniVinci
+      display: Code
+    - url: https://huggingface.co/nvidia/omnivinci
+      display: Models
   highlight: 1
 
 - title: "Minifinetuning: Low-Data Generation Domain Adaptation through Corrective Self-Distillation"
@@ -94,6 +124,17 @@
       display: Arxiv
     - url: https://research.nvidia.com/labs/lpr/minifinetuning
       display: Project Page
+  highlight: 1
+
+- title: "Small Language Models are the Future of Agentic AI"
+  description: "Small language models (SLMs) are often overlooked in favor of larger, more powerful models. However, we argue that small LLMs are the future of agentic AI due to their efficiency, accessibility, and adaptability. Here we detail our position on the future of agentic AI, arguing with evidence that that the industry and the community are to benefit from a switch from LLMs to SLMs. Our position is based on three key points: That SLMs are sufficiently powerful, inherently more suitable, and necessarily more economical for many invocations in agentic systems. We then draw a conclusion that they are, to a large extent, the future of agentic AI. We also outline a LLM-to-SLM conversion algorithm that can be employed to produce a SLM for a specific agentic workflow. We welcome correspondence on the topic."
+  authors: Peter Belcak, Greg Heinrich, Shizhe Diao, Yonggan Fu, Xin Dong, Saurav Muralidharan, Yingyan Celine Lin, Pavlo Molchanov
+  image: slm_agents2.png
+  linklist:
+    - url: https://arxiv.org/abs/2506.02153
+      display: Arxiv
+    - url: https://research.nvidia.com/labs/lpr/slm-agents/
+      display: Project/Correspondence Page
   highlight: 1
 
 - title: "CLIMB: CLustering-based Iterative Data Mixture Bootstrapping"
@@ -274,6 +315,18 @@
       display: Blog
   highlight: 1
 
+- title: "Flextron: Many-in-One Flexible Large Language Model"
+  image: flextron.png
+  description: Training modern LLMs is extremely resource intensive, and customizing them for various deployment scenarios characterized by limited compute and memory resources through repeated training is impractical. We introduce Flextron, a network architecture and post-training model optimization framework supporting flexible model deployment.
+  authors: Ruisi Cai, Saurav Muralidharan, Greg Heinrich, Hongxu Yin, Zhangyang Wang, Jan Kautz, Pavlo Molchanov
+  venue: ICML 2024 (oral)
+  linklist:
+    - url: https://arxiv.org/abs/2406.10260
+      display: Arxiv
+    - url: https://cairuisi.github.io/Flextron/
+      display: Webpage
+  highlight: 1
+
 - title: "DoRA: Weight-Decomposed Low-Rank Adaptation"
   image: dora.png
   image_fit: contain
@@ -329,18 +382,6 @@
     - url: https://www.arxiv.org/abs/2407.16286
       display: Arxiv
   highlight: 0
-
-- title: "Flextron: Many-in-One Flexible Large Language Model"
-  image: flextron.png
-  description: Training modern LLMs is extremely resource intensive, and customizing them for various deployment scenarios characterized by limited compute and memory resources through repeated training is impractical. We introduce Flextron, a network architecture and post-training model optimization framework supporting flexible model deployment.
-  authors: Ruisi Cai, Saurav Muralidharan, Greg Heinrich, Hongxu Yin, Zhangyang Wang, Jan Kautz, Pavlo Molchanov
-  venue: ICML 2024 (oral)
-  linklist:
-    - url: https://arxiv.org/abs/2406.10260
-      display: Arxiv
-    - url: https://cairuisi.github.io/Flextron/
-      display: Webpage
-  highlight: 1
 
 - title: "Step Out and Seek Around: On Warm-Start Training with Incremental Data"
   image: StepOut.png
