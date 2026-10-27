@@ -143,7 +143,7 @@ permalink: /
       </div>
       <ul>
         {% for member in site.data.interns %}
-        <li><a class="people-list-row" href="{{ member.webpage }}"><strong>{{ member.name }}</strong><span>{{ member.info }}</span><i aria-hidden="true">↗</i></a></li>
+        <li>{% if member.webpage %}<a class="people-list-row" href="{{ member.webpage }}">{% else %}<div class="people-list-row">{% endif %}<strong>{{ member.name }}</strong><span>{{ member.info }}</span>{% if member.webpage %}<i aria-hidden="true">↗</i></a>{% else %}</div>{% endif %}</li>
         {% endfor %}
       </ul>
     </div>
