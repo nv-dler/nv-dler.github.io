@@ -1,3 +1,15 @@
+- title: "EdgeWise: Bringing Long-Horizon Agents to the Edge via Selective Cloud Delegation"
+  description: "EdgeWise runs a small language model locally as the primary agent and delegates critical steps to a cloud model. Step-level reinforcement learning teaches the local model when to delegate, while an external judge offers a training-free alternative. Across long-horizon coding tasks, EdgeWise matches or exceeds cloud-only performance while reducing inference costs by up to 62% on SWE-Rebench and 34% on Terminal-Bench 2.1."
+  authors: Zeru Shi, Jindong Jiang, Ryo Hachiuma, Yonggan Fu, Byung-Kwan Lee, Peter Belcak, Saurav Muralidharan, Ayush Agarwal, Ruixiang Tang, Ambrish Dantrey, Pavlo Molchanov, Anjul Patney, Subhashree Radhakrishnan
+  image: EdgeWise.png
+  image_fit: contain
+  linklist:
+    - url: https://arxiv.org/abs/2610.17560
+      display: Arxiv
+    - url: https://research.nvidia.com/labs/lpr/edge-wise/
+      display: Project Page
+  highlight: 1
+
 - title: "Nemotron-Labs-Diffusion: A Tri-Mode Language Model Unifying Autoregressive, Diffusion, and Self-Speculation Decoding"
   description: "Nemotron-Labs-Diffusion unifies autoregressive, diffusion, and self-speculation decoding within a single language model trained with a joint AR-diffusion objective. The resulting 3B, 8B, and 14B model family can switch decoding modes across deployment settings, delivering strong efficiency across different serving concurrency levels and outperforming existing multi-token prediction methods. By combining the accuracy of autoregressive generation with diffusion-based parallelism, Nemotron-Labs-Diffusion-8B achieves 4x higher throughput than Qwen3-8B on SPEED-Bench using SGLang on an NVIDIA GB200 GPU."
   authors: Yonggan Fu, Lexington Whalen, Abhinav Garg, Chengyue Wu, Maksim Khadkevich, Nicolai Oswald, Enze Xie, Daniel Egert, Sharath Turuvekere Sreenivas, Shizhe Diao, Chenhan Yu, Ye Yu, Weijia Chen, Sajad Norouzi, Jingyu Liu, Shiyi Lan, Ligeng Zhu, Jin Wang, Jindong Jiang, Morteza Mardani, Mehran Maghoumi, Song Han, Ante Jukić, Nima Tajbakhsh, Jan Kautz, Pavlo Molchanov
