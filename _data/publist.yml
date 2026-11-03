@@ -1,3 +1,13 @@
+- title: "AgentBaton: Efficient Model Collaboration in Agentic Tasks"
+  description: "AgentBaton learns when a capable language model can hand off a long-horizon agentic task to a more efficient model. Its lightweight detector identifies suitable handoff points from patterns in task progress. Across 11 model pairs and two benchmarks, AgentBaton reduces API costs by 65.9% on average while largely preserving task accuracy, with gains of up to 8.8 percentage points over capable-only execution."
+  authors: Junlong Li, Jindong Jiang, Yonggan Fu, Jiarui Yao, Hanrong Ye, Wonmin Byeon, Peter Belcak, Hao Zhang, Pavlo Molchanov
+  image: AgentBaton.png
+  image_fit: contain
+  linklist:
+    - url: https://arxiv.org/abs/2610.35959
+      display: Arxiv
+  highlight: 1
+
 - title: "EdgeWise: Bringing Long-Horizon Agents to the Edge via Selective Cloud Delegation"
   description: "EdgeWise runs a small language model locally as the primary agent and delegates critical steps to a cloud model. Step-level reinforcement learning teaches the local model when to delegate, while an external judge offers a training-free alternative. Across long-horizon coding tasks, EdgeWise matches or exceeds cloud-only performance while reducing inference costs by up to 62% on SWE-Rebench and 34% on Terminal-Bench 2.1."
   authors: Zeru Shi, Jindong Jiang, Ryo Hachiuma, Yonggan Fu, Byung-Kwan Lee, Peter Belcak, Saurav Muralidharan, Ayush Agarwal, Ruixiang Tang, Ambrish Dantrey, Pavlo Molchanov, Anjul Patney, Subhashree Radhakrishnan
