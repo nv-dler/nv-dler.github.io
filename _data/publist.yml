@@ -1,7 +1,7 @@
 - title: "You don't need long context"
   description: "Frequent context compaction lets frontier language models maintain short contexts with little to no loss in accuracy across long-horizon and long-input tasks. The study finds that generating tokens at longer contexts can cost up to 7x more, and that software engineering agents remain effective even when taking only one action per context. These findings motivate semantic state space models that carry compact task state between actions."
   authors: Peter Belcak, Saurav Muralidharan, Jindong Jiang, Yonggan Fu, Wonmin Byeon, Hanrong Ye, Ryan Angilly, Ali Taghibakhshi, Shih-Yang Liu, Siru Ouyang, Greg Heinrich, Pavlo Molchanov
-  image: long_context.png
+  image: long_context_long_horizon_results.png
   image_fit: contain
   linklist:
     - url: https://arxiv.org/abs/2611.05306
