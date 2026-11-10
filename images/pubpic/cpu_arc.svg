@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540" role="img" aria-labelledby="title desc">
+  <title id="title">CPU-ARC: reusable reasoning on the CPU</title>
+  <desc id="desc">Language model reasoning traces are converted into reusable agentic reasoning caches. Modular code and small language models execute cached solutions on the CPU, reducing invocation costs by 16 to 291 times compared with the source model.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0 0 8 4 0 8Z" fill="#527326"/>
+    </marker>
+  </defs>
+  <rect width="960" height="540" fill="#f3f5ef"/>
+  <g font-family="Arial, Helvetica, sans-serif">
+    <text x="64" y="91" fill="#202820" font-size="42" font-weight="700">CPU-ARC</text>
+    <text x="64" y="131" fill="#586353" font-size="22">Reason once. Reuse the solution.</text>
+    <g fill="#fff" stroke="#c9d3bd" stroke-width="2">
+      <rect x="64" y="204" width="238" height="156" rx="12"/>
+      <rect x="361" y="204" width="238" height="156" rx="12"/>
+      <rect x="658" y="204" width="238" height="156" rx="12"/>
+    </g>
+    <g stroke="#527326" stroke-width="3" marker-end="url(#arrow)">
+      <path d="M312 282H349"/>
+      <path d="M609 282H646"/>
+    </g>
+    <g fill="#202820" font-size="23" font-weight="700" text-anchor="middle">
+      <text x="183" y="263">LLM reasoning</text>
+      <text x="183" y="294">traces</text>
+      <text x="480" y="263">Reusable</text>
+      <text x="480" y="294">reasoning cache</text>
+      <text x="777" y="263">CPU execution</text>
+    </g>
+    <g fill="#586353" font-size="17" text-anchor="middle">
+      <text x="183" y="332">Source solutions</text>
+      <text x="480" y="332">Modular, correctable code</text>
+      <text x="777" y="302">Code + small LMs</text>
+      <text x="777" y="332">New problem instances</text>
+    </g>
+    <rect x="64" y="404" width="832" height="76" rx="12" fill="#e0edce"/>
+    <text x="480" y="451" text-anchor="middle" fill="#304d16" font-size="27" font-weight="700">16-291x lower invocation cost</text>
+  </g>
+</svg>

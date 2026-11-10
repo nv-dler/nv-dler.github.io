@@ -1,3 +1,13 @@
+- title: "CPU-ARC: Agentic Reasoning Caching for on-CPU Reasoning Reuse"
+  description: "CPU-ARC turns language model reasoning traces into reusable, CPU-executable agentic reasoning caches. These caches combine modular code with small language models to solve new instances of previously reasoned-through tasks. Across challenging mathematical and scientific benchmarks, they match frontier model performance while remaining explainable, correctable, and robust to changes in phrasing and parameters, with invocation costs 16-291x lower than the source model."
+  authors: Peter Belcak, Greg Heinrich, Saurav Muralidharan, Shizhe Diao, Pavlo Molchanov
+  image: cpu_arc.svg
+  image_fit: contain
+  linklist:
+    - url: https://arxiv.org/abs/2611.09891
+      display: Arxiv
+  highlight: 1
+
 - title: "You don't need long context"
   description: "Frequent context compaction lets frontier language models maintain short contexts with little to no loss in accuracy across long-horizon and long-input tasks. The study finds that generating tokens at longer contexts can cost up to 7x more, and that software engineering agents remain effective even when taking only one action per context. These findings motivate semantic state space models that carry compact task state between actions."
   authors: Peter Belcak, Saurav Muralidharan, Jindong Jiang, Yonggan Fu, Wonmin Byeon, Hanrong Ye, Ryan Angilly, Ali Taghibakhshi, Shih-Yang Liu, Siru Ouyang, Greg Heinrich, Pavlo Molchanov
