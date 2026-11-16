@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+  <title id="title">AutoCompress: Automated Hardware-Guided Model Compression</title>
+  <desc id="desc">Hardware and workload constraints guide differentiable architecture search to produce compressed heterogeneous models. Nemotron 3.5 Super is compressed from 120B to 74B parameters, retaining 95% of its mean benchmark score.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0 0 8 4 0 8" fill="none" stroke="#56616b" stroke-width="1.5"/></marker>
+  </defs>
+  <rect width="640" height="360" rx="16" fill="#f4f7f1"/>
+  <g font-family="Arial, Helvetica, sans-serif" text-anchor="middle" fill="#17251a">
+    <text x="320" y="45" font-size="25" font-weight="700">AutoCompress</text>
+    <text x="320" y="73" font-size="17" fill="#52604f">Automated Hardware-Guided Model Compression</text>
+    <g stroke="#56616b" stroke-width="2" marker-end="url(#arrow)">
+      <path d="M185 178H228"/>
+      <path d="M411 178H454"/>
+    </g>
+    <rect x="24" y="112" width="160" height="132" rx="12" fill="#e4e9ec" stroke="#7a8990" stroke-width="2"/>
+    <text x="104" y="144" font-size="15" font-weight="700">Hardware + workload</text>
+    <text x="104" y="176" font-size="15">Latency · Throughput</text>
+    <text x="104" y="201" font-size="15">Memory constraints</text>
+    <rect x="236" y="112" width="174" height="132" rx="12" fill="#d9edbd" stroke="#598d18" stroke-width="2"/>
+    <text x="323" y="144" font-size="15" font-weight="700">Architecture search</text>
+    <text x="323" y="176" font-size="15">Differentiable pruning</text>
+    <text x="323" y="201" font-size="15">Serving cost models</text>
+    <rect x="462" y="112" width="154" height="132" rx="12" fill="#d9edbd" stroke="#598d18" stroke-width="2"/>
+    <text x="539" y="144" font-size="15" font-weight="700">Compressed model</text>
+    <text x="539" y="176" font-size="15">Heterogeneous layers</text>
+    <text x="539" y="201" font-size="15">Tailored to deployment</text>
+    <text x="320" y="290" font-size="23" font-weight="700">Nemotron 3.5 Super: 120B → 74B</text>
+    <text x="320" y="321" font-size="16" fill="#52604f">95% of mean benchmark score · B200 BF16 · 128K context</text>
+  </g>
+</svg>
